@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Apex Logistics</title>
+  <meta name="description" content="Learn about Apex Logistics: a Kraków-based freight forwarder with 15 years' experience, a modern fleet, and a 25-country European network built on trust and transparency.">
+  <meta name="theme-color" content="#1E3A8A">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Apex Logistics">
+  <meta property="og:title" content="About Us — Apex Logistics">
+  <meta property="og:description" content="Learn about Apex Logistics: a Kraków-based freight forwarder with 15 years' experience, a modern fleet, and a 25-country European network built on trust and transparency.">
+  <meta property="og:image" content="assets/images/hero-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Montserrat (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Apex Logistics — home">
+        <img src="assets/images/logo-placeholder.svg" alt="" class="brand-logo" width="40" height="40">
+        <span class="brand-name">Apex Logistics</span> <!-- REPLACE: company name -->
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="btn btn-accent btn-sm">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in drawer + overlay -->
+  <div class="nav-overlay" id="nav-overlay" hidden></div>
+  <aside class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-nav-head">
+      <span class="brand-name">Apex Logistics</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-foot">
+      <a href="tel:+48123456789"><i class="fa-solid fa-phone" aria-hidden="true"></i> +48 123 456 789</a>
+    </div>
+  </aside>
+  <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">About</span>
+        </nav>
+        <p class="eyebrow eyebrow-light" data-aos="fade-up">About Apex Logistics</p>
+        <h1 data-aos="fade-up" data-aos-delay="50">Fifteen years of moving freight, building trust</h1>
+        <p class="page-hero-lead" data-aos="fade-up" data-aos-delay="100">We are a Kraków-based logistics provider helping businesses ship smarter across Europe — combining people who care with technology that keeps every load visible.</p>
+      </div>
+    </section>
+    <!-- Company intro -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="two-col-media" data-aos="fade-right">
+          <img src="assets/images/warehouse-placeholder.svg" alt="Apex Logistics distribution warehouse interior" loading="lazy" width="600" height="440">
+        </div>
+        <div class="two-col-text" data-aos="fade-left">
+          <p class="eyebrow">Who we are</p>
+          <h2>A logistics partner, not just a carrier</h2>
+          <p>Founded in 2011, Apex Logistics grew from a single regional route into a full-service freight forwarder serving manufacturers, retailers, and distributors across the European Union. <!-- REPLACE: company history --></p>
+          <p>We believe logistics should be transparent and stress-free. That means honest pricing, proactive communication, and a dedicated point of contact who knows your business — backed by tracking technology that lets you see exactly where your freight is at any moment.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> ISO-aligned quality and safety processes</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Multilingual team across Central Europe</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Carbon reporting on every shipment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Mission &amp; Vision -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">What drives us</p>
+          <h2>Mission &amp; vision</h2>
+        </div>
+        <div class="grid grid-2 mv-grid">
+          <article class="card mv-card" data-aos="fade-up">
+            <div class="mv-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+            <h3>Our mission</h3>
+            <p>To move our clients' goods reliably and responsibly — giving every business, whatever its size, access to logistics that are transparent, on time, and easy to manage.</p>
+          </article>
+          <article class="card mv-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="mv-icon"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
+            <h3>Our vision</h3>
+            <p>To be Central Europe's most trusted logistics partner, recognised for service that goes further and for cutting the carbon cost of freight without cutting reliability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline -->
+    <section class="section timeline-section">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">Our journey</p>
+          <h2>Milestones along the way</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item timeline-left" data-aos="fade-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <span class="timeline-year">2011</span>
+              <h3>Founded in Kraków</h3>
+              <p>Apex Logistics opens with a small road-freight fleet serving southern Poland.</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-right" data-aos="fade-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <span class="timeline-year">2014</span>
+              <h3>First EU corridors</h3>
+              <p>We expand into Germany, Czechia, and Slovakia, adding groupage services.</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-left" data-aos="fade-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <span class="timeline-year">2017</span>
+              <h3>Warehousing launched</h3>
+              <p>A 12,000&nbsp;m² facility opens, adding storage and pick-and-pack to our offer.</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-right" data-aos="fade-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <span class="timeline-year">2021</span>
+              <h3>Going digital</h3>
+              <p>Live GPS tracking and a client portal give customers full shipment visibility.</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-left" data-aos="fade-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <span class="timeline-year">2024</span>
+              <h3>25-country network</h3>
+              <p>Intermodal partnerships extend reliable coverage across the European Union.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- Stats counters -->
+    <section class="stats" aria-label="Company statistics">
+      <div class="container stats-grid">
+          <div class="stat" data-aos="fade-up" data-aos-delay="0">
+            <span class="stat-number" data-count="10000" data-suffix="+">0+</span>
+            <span class="stat-label">Deliveries completed</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="80">
+            <span class="stat-number" data-count="98" data-suffix="%">0%</span>
+            <span class="stat-label">On-time performance</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="160">
+            <span class="stat-number" data-count="25" data-suffix="">0</span>
+            <span class="stat-label">Countries served</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="240">
+            <span class="stat-number" data-count="15" data-suffix="">0</span>
+            <span class="stat-label">Years of experience</span>
+          </div>
+      </div>
+    </section>
+    <!-- Team -->
+    <section class="section section-alt team-section">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">Our people</p>
+          <h2>Meet the leadership team</h2>
+          <p class="section-subtitle">The people who make sure your freight is in good hands.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card team-card" data-aos="fade-up" data-aos-delay="0">
+            <img src="assets/images/team-placeholder.svg" alt="Portrait of Jan Wiśniewski" loading="lazy" width="260" height="260">
+            <div class="team-body">
+              <h3>Jan Wiśniewski</h3>
+              <p class="team-role">Managing Director</p>
+              <ul class="team-social" aria-label="Jan Wiśniewski on social media">
+                <li><a href="#" aria-label="Jan Wiśniewski on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:office@apexlogistics.example" aria-label="Email Jan Wiśniewski"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="card team-card" data-aos="fade-up" data-aos-delay="60">
+            <img src="assets/images/team-placeholder.svg" alt="Portrait of Katarzyna Lewandowska" loading="lazy" width="260" height="260">
+            <div class="team-body">
+              <h3>Katarzyna Lewandowska</h3>
+              <p class="team-role">Head of Operations</p>
+              <ul class="team-social" aria-label="Katarzyna Lewandowska on social media">
+                <li><a href="#" aria-label="Katarzyna Lewandowska on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:office@apexlogistics.example" aria-label="Email Katarzyna Lewandowska"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="card team-card" data-aos="fade-up" data-aos-delay="120">
+            <img src="assets/images/team-placeholder.svg" alt="Portrait of Piotr Zieliński" loading="lazy" width="260" height="260">
+            <div class="team-body">
+              <h3>Piotr Zieliński</h3>
+              <p class="team-role">Fleet Manager</p>
+              <ul class="team-social" aria-label="Piotr Zieliński on social media">
+                <li><a href="#" aria-label="Piotr Zieliński on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:office@apexlogistics.example" aria-label="Email Piotr Zieliński"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="card team-card" data-aos="fade-up" data-aos-delay="180">
+            <img src="assets/images/team-placeholder.svg" alt="Portrait of Magdalena Wójcik" loading="lazy" width="260" height="260">
+            <div class="team-body">
+              <h3>Magdalena Wójcik</h3>
+              <p class="team-role">Customer Success Lead</p>
+              <ul class="team-social" aria-label="Magdalena Wójcik on social media">
+                <li><a href="#" aria-label="Magdalena Wójcik on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:office@apexlogistics.example" aria-label="Email Magdalena Wójcik"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Partners -->
+    <section class="section partners-section">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">Our network</p>
+          <h2>Partners &amp; accreditations</h2>
+          <p class="section-subtitle">Placeholder partner logos shown for layout.</p>
+        </div>
+        <ul class="partners-strip">
+          <li data-aos="zoom-in" data-aos-delay="0"><img src="assets/images/partner-logo-placeholder.svg" alt="Partner organisation 1" loading="lazy" width="160" height="56"></li>
+          <li data-aos="zoom-in" data-aos-delay="40"><img src="assets/images/partner-logo-placeholder.svg" alt="Partner organisation 2" loading="lazy" width="160" height="56"></li>
+          <li data-aos="zoom-in" data-aos-delay="80"><img src="assets/images/partner-logo-placeholder.svg" alt="Partner organisation 3" loading="lazy" width="160" height="56"></li>
+          <li data-aos="zoom-in" data-aos-delay="120"><img src="assets/images/partner-logo-placeholder.svg" alt="Partner organisation 4" loading="lazy" width="160" height="56"></li>
+          <li data-aos="zoom-in" data-aos-delay="160"><img src="assets/images/partner-logo-placeholder.svg" alt="Partner organisation 5" loading="lazy" width="160" height="56"></li>
+          <li data-aos="zoom-in" data-aos-delay="200"><img src="assets/images/partner-logo-placeholder.svg" alt="Partner organisation 6" loading="lazy" width="160" height="56"></li>
+        </ul>
+      </div>
+    </section>
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="container cta-inner" data-aos="fade-up">
+        <div class="cta-text">
+          <h2>Want to work with a team that treats your freight like its own?</h2>
+          <p>Tell us about your shipment and our team will design a route, mode, and price that fit your deadline.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-accent">Request a Quote</a>
+          <a href="services.html" class="btn btn-secondary btn-on-dark">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <div class="footer-brand">
+          <img src="assets/images/logo-placeholder.svg" alt="" class="footer-logo" width="36" height="36">
+          <span class="brand-name">Apex Logistics</span>
+        </div>
+        <p class="footer-blurb">Reliable road, warehousing, and supply&nbsp;chain solutions that keep your goods moving across borders — on time, every time.</p>
+        <ul class="social-links" aria-label="Social media">
+          <li><a href="#" aria-label="Apex Logistics on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Services">
+        <h2 class="footer-heading">Services</h2>
+        <ul>
+          <li><a href="services.html">Road Transport</a></li>
+          <li><a href="services.html">Warehousing</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Intermodal</a></li>
+          <li><a href="services.html">Express Delivery</a></li>
+          <li><a href="services.html">Supply Chain Management</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>ul. Przykładowa 12, 30-001 Kraków, Poland</span></li> <!-- REPLACE: address -->
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48123456789">+48 123 456 789</a></li> <!-- REPLACE: phone -->
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:office@apexlogistics.example">office@apexlogistics.example</a></li> <!-- REPLACE: email -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="current-year">2026</span> Apex Logistics. All rights reserved.</p>
+        <p class="footer-legal"><a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">·</span> <a href="terms.html">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!-- Libraries (CDN) -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Site scripts -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

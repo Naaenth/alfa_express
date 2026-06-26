@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Logistics — Road, Rail &amp; Sea Freight Across Europe</title>
+  <meta name="description" content="Apex Logistics provides road transport, warehousing, customs clearance, intermodal, and express delivery across 25 countries, with live tracking and a modern fleet.">
+  <meta name="theme-color" content="#1E3A8A">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Apex Logistics">
+  <meta property="og:title" content="Apex Logistics — Road, Rail &amp; Sea Freight Across Europe">
+  <meta property="og:description" content="Apex Logistics provides road transport, warehousing, customs clearance, intermodal, and express delivery across 25 countries, with live tracking and a modern fleet.">
+  <meta property="og:image" content="assets/images/hero-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Montserrat (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Apex Logistics — home">
+        <img src="assets/images/logo-placeholder.svg" alt="" class="brand-logo" width="40" height="40">
+        <span class="brand-name">Apex Logistics</span> <!-- REPLACE: company name -->
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="btn btn-accent btn-sm">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in drawer + overlay -->
+  <div class="nav-overlay" id="nav-overlay" hidden></div>
+  <aside class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-nav-head">
+      <span class="brand-name">Apex Logistics</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-foot">
+      <a href="tel:+48123456789"><i class="fa-solid fa-phone" aria-hidden="true"></i> +48 123 456 789</a>
+    </div>
+  </aside>
+  <main id="main">
+    <!-- HERO -->
+    <!-- REPLACE all placeholder images in assets/images/ with real photos -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content" data-aos="fade-up">
+          <p class="hero-eyebrow"><i class="fa-solid fa-globe" aria-hidden="true"></i> Global Logistics &amp; Freight Forwarding</p>
+          <h1>Moving Your Business Forward.</h1>
+          <p class="hero-lead">Apex Logistics plans, ships, and tracks your freight by road, rail, and sea — combining a modern fleet with real-time visibility so your goods arrive on time, every time.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-accent">Get a Free Quote</a>
+            <a href="services.html" class="btn btn-secondary btn-on-dark">Explore Services</a>
+          </div>
+          <ul class="hero-highlights">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Live shipment tracking</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> 25-country coverage</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Dedicated account manager</li>
+          </ul>
+        </div>
+        <div class="hero-media" data-aos="fade-left" data-aos-delay="150">
+          <img src="assets/images/hero-placeholder.svg" alt="Apex Logistics fleet of trucks on the motorway at sunrise" width="560" height="460">
+          <div class="hero-badge">
+            <span class="hero-badge-num">98%</span>
+            <span class="hero-badge-label">On-time delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trust bar -->
+    <section class="trust-bar" aria-label="Our partners">
+      <div class="container">
+        <p class="trust-label">Trusted by supply chain teams across Europe</p>
+        <ul class="trust-logos">
+          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 1" loading="lazy" width="140" height="48"></li>
+          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 2" loading="lazy" width="140" height="48"></li>
+          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 3" loading="lazy" width="140" height="48"></li>
+          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 4" loading="lazy" width="140" height="48"></li>
+          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 5" loading="lazy" width="140" height="48"></li>
+          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 6" loading="lazy" width="140" height="48"></li>
+        </ul>
+      </div>
+    </section>
+    <!-- Services overview -->
+    <section class="section services-overview">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">What we do</p>
+          <h2>Logistics services built around your deadline</h2>
+          <p class="section-subtitle">From a single pallet to a full supply chain, we match the right mode and route to every shipment.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="service-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
+            <h3>Road Transport</h3>
+            <p>Full-load and groupage road freight across Poland and the EU, with live tracking from pickup to delivery.</p>
+            <a class="card-link" href="services.html">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="card service-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="service-icon"><i class="fa-solid fa-warehouse" aria-hidden="true"></i></div>
+            <h3>Warehousing</h3>
+            <p>Secure short- and long-term storage, pick-and-pack, and inventory management in modern facilities.</p>
+            <a class="card-link" href="services.html">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="card service-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="service-icon"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i></div>
+            <h3>Customs Clearance</h3>
+            <p>Import and export customs handling, documentation, and duty advice that keep shipments moving.</p>
+            <a class="card-link" href="services.html">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="card service-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="service-icon"><i class="fa-solid fa-train-subway" aria-hidden="true"></i></div>
+            <h3>Intermodal</h3>
+            <p>Combined road, rail, and sea routing that lowers cost and carbon on long-haul lanes.</p>
+            <a class="card-link" href="services.html">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+        <div class="section-cta" data-aos="fade-up">
+          <a href="services.html" class="btn btn-primary">See all services</a>
+        </div>
+      </div>
+    </section>
+    <!-- Fleet preview -->
+    <section class="section section-alt fleet-preview">
+      <div class="container fleet-preview-inner">
+        <div class="fleet-preview-media" data-aos="fade-right">
+          <img src="assets/images/truck1-placeholder.svg" alt="Apex Logistics articulated curtain-side truck" loading="lazy" width="600" height="420">
+        </div>
+        <div class="fleet-preview-text" data-aos="fade-left">
+          <p class="eyebrow">Our fleet</p>
+          <h2>A modern, well-maintained fleet for every load</h2>
+          <p>From vans for express parcels to 40-tonne articulated trailers, our vehicles are GPS-tracked, regularly serviced, and driven by trained, vetted professionals. Temperature-controlled and oversized options are available on request.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Euro&nbsp;6 tractors and refrigerated trailers</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Real-time GPS and temperature monitoring</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> ADR-certified drivers for hazardous goods</li>
+          </ul>
+          <a href="fleet.html" class="btn btn-primary">View the fleet</a>
+        </div>
+      </div>
+    </section>
+    <!-- Industries -->
+    <section class="section industries">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">Who we serve</p>
+          <h2>Industries we keep moving</h2>
+          <p class="section-subtitle">Specialised handling and compliance for the sectors that depend on dependable delivery.</p>
+        </div>
+        <ul class="industries-grid">
+          <li class="industry" data-aos="zoom-in" data-aos-delay="0">
+            <i class="fa-solid fa-industry" aria-hidden="true"></i>
+            <span>Manufacturing</span>
+          </li>
+          <li class="industry" data-aos="zoom-in" data-aos-delay="40">
+            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            <span>Retail &amp; E-commerce</span>
+          </li>
+          <li class="industry" data-aos="zoom-in" data-aos-delay="80">
+            <i class="fa-solid fa-flask" aria-hidden="true"></i>
+            <span>Chemicals</span>
+          </li>
+          <li class="industry" data-aos="zoom-in" data-aos-delay="120">
+            <i class="fa-solid fa-apple-whole" aria-hidden="true"></i>
+            <span>Food &amp; Beverage</span>
+          </li>
+          <li class="industry" data-aos="zoom-in" data-aos-delay="160">
+            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+            <span>Technology</span>
+          </li>
+          <li class="industry" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fa-solid fa-car" aria-hidden="true"></i>
+            <span>Automotive</span>
+          </li>
+          <li class="industry" data-aos="zoom-in" data-aos-delay="240">
+            <i class="fa-solid fa-pills" aria-hidden="true"></i>
+            <span>Pharmaceuticals</span>
+          </li>
+          <li class="industry" data-aos="zoom-in" data-aos-delay="280">
+            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            <span>Agriculture</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- How we work -->
+    <section class="section section-alt how-we-work">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">How we work</p>
+          <h2>Four steps from enquiry to delivery</h2>
+          <p class="section-subtitle">A simple, transparent process that keeps you informed at every stage.</p>
+        </div>
+        <ol class="steps">
+          <li class="step" data-aos="fade-up" data-aos-delay="0">
+            <span class="step-num">1</span>
+            <div class="step-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+            <h3>Consultation</h3>
+            <p>We learn your goods, lanes, volumes, and deadlines to understand exactly what success looks like.</p>
+          </li>
+          <li class="step" data-aos="fade-up" data-aos-delay="70">
+            <span class="step-num">2</span>
+            <div class="step-icon"><i class="fa-solid fa-route" aria-hidden="true"></i></div>
+            <h3>Planning</h3>
+            <p>Our team designs the optimal mode, route, and schedule and shares a clear, fixed quote.</p>
+          </li>
+          <li class="step" data-aos="fade-up" data-aos-delay="140">
+            <span class="step-num">3</span>
+            <div class="step-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
+            <h3>Delivery</h3>
+            <p>Your freight moves with live tracking and proactive updates at every milestone.</p>
+          </li>
+          <li class="step" data-aos="fade-up" data-aos-delay="210">
+            <span class="step-num">4</span>
+            <div class="step-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+            <h3>Support</h3>
+            <p>A dedicated manager handles documentation, exceptions, and reporting after delivery.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- Stats counters -->
+    <section class="stats" aria-label="Company statistics">
+      <div class="container stats-grid">
+          <div class="stat" data-aos="fade-up" data-aos-delay="0">
+            <span class="stat-number" data-count="10000" data-suffix="+">0+</span>
+            <span class="stat-label">Deliveries completed</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="80">
+            <span class="stat-number" data-count="98" data-suffix="%">0%</span>
+            <span class="stat-label">On-time performance</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="160">
+            <span class="stat-number" data-count="25" data-suffix="">0</span>
+            <span class="stat-label">Countries served</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="240">
+            <span class="stat-number" data-count="15" data-suffix="">0</span>
+            <span class="stat-label">Years of experience</span>
+          </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">Client feedback</p>
+          <h2>What our clients say</h2>
+          <p class="section-subtitle">Placeholder testimonials shown for layout — replace with real client quotes.</p>
+        </div>
+        <div class="swiper testimonials-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <blockquote class="testimonial card">
+                <div class="testimonial-stars" aria-label="Rated 5 out of 5">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-quote">&ldquo;This is placeholder testimonial copy. Apex moved our seasonal stock across three countries without a single missed slot — the live tracking alone saved us hours of phone calls.&rdquo;</p>
+                <footer class="testimonial-author">
+                  <img src="assets/images/team-placeholder.svg" alt="" class="testimonial-avatar" loading="lazy" width="48" height="48">
+                  <span><strong>Anna Kowalska</strong><span class="testimonial-role">Operations Lead, Retail Group</span></span>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <blockquote class="testimonial card">
+                <div class="testimonial-stars" aria-label="Rated 5 out of 5">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-quote">&ldquo;Placeholder testimonial. Their customs team untangled a complex import that had stalled for a week. Clear communication and a fair, fixed price from start to finish.&rdquo;</p>
+                <footer class="testimonial-author">
+                  <img src="assets/images/team-placeholder.svg" alt="" class="testimonial-avatar" loading="lazy" width="48" height="48">
+                  <span><strong>Marek Nowak</strong><span class="testimonial-role">Supply Chain Manager, Manufacturing</span></span>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <blockquote class="testimonial card">
+                <div class="testimonial-stars" aria-label="Rated 5 out of 5">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-quote">&ldquo;Sample quote for layout. We switched our long-haul lanes to Apex's intermodal service and cut both cost and emissions while keeping delivery dates intact.&rdquo;</p>
+                <footer class="testimonial-author">
+                  <img src="assets/images/team-placeholder.svg" alt="" class="testimonial-avatar" loading="lazy" width="48" height="48">
+                  <span><strong>Sofia Lindgren</strong><span class="testimonial-role">Logistics Director, Food &amp; Beverage</span></span>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <blockquote class="testimonial card">
+                <div class="testimonial-stars" aria-label="Rated 5 out of 5">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-quote">&ldquo;Placeholder review text. Responsive, reliable, and genuinely proactive — when a road closure threatened a deadline, they rerouted before we even noticed.&rdquo;</p>
+                <footer class="testimonial-author">
+                  <img src="assets/images/team-placeholder.svg" alt="" class="testimonial-avatar" loading="lazy" width="48" height="48">
+                  <span><strong>Tomáš Horák</strong><span class="testimonial-role">Procurement Lead, Technology</span></span>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <button class="swiper-button-prev" aria-label="Previous testimonial"></button>
+          <button class="swiper-button-next" aria-label="Next testimonial"></button>
+        </div>
+      </div>
+    </section>
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="container cta-inner" data-aos="fade-up">
+        <div class="cta-text">
+          <h2>Ready to move your freight with confidence?</h2>
+          <p>Tell us about your shipment and our team will design a route, mode, and price that fit your deadline.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-accent">Request a Quote</a>
+          <a href="services.html" class="btn btn-secondary btn-on-dark">View Services</a>
+        </div>
+      </div>
+    </section>
+    <!-- Map + contact info -->
+    <section class="section section-alt home-contact">
+      <div class="container home-contact-inner">
+        <div class="home-contact-text" data-aos="fade-right">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Let's plan your next shipment</h2>
+          <p>Our Kraków team responds to most enquiries within one business day. Reach out for a quote, a tracking update, or to discuss a long-term partnership.</p>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>ul. Przykładowa 12, 30-001 Kraków, Poland</span></li> <!-- REPLACE: address -->
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48123456789">+48 123 456 789</a></li> <!-- REPLACE: phone -->
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:office@apexlogistics.example">office@apexlogistics.example</a></li> <!-- REPLACE: email -->
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i> <span>Mon–Fri, 08:00–18:00 CET</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Contact us</a>
+        </div>
+        <div class="home-contact-media" data-aos="fade-left">
+          <img src="assets/images/coverage-map-placeholder.svg" alt="Map showing Apex Logistics coverage across Europe" loading="lazy" width="600" height="420">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <div class="footer-brand">
+          <img src="assets/images/logo-placeholder.svg" alt="" class="footer-logo" width="36" height="36">
+          <span class="brand-name">Apex Logistics</span>
+        </div>
+        <p class="footer-blurb">Reliable road, warehousing, and supply&nbsp;chain solutions that keep your goods moving across borders — on time, every time.</p>
+        <ul class="social-links" aria-label="Social media">
+          <li><a href="#" aria-label="Apex Logistics on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Services">
+        <h2 class="footer-heading">Services</h2>
+        <ul>
+          <li><a href="services.html">Road Transport</a></li>
+          <li><a href="services.html">Warehousing</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Intermodal</a></li>
+          <li><a href="services.html">Express Delivery</a></li>
+          <li><a href="services.html">Supply Chain Management</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>ul. Przykładowa 12, 30-001 Kraków, Poland</span></li> <!-- REPLACE: address -->
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48123456789">+48 123 456 789</a></li> <!-- REPLACE: phone -->
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:office@apexlogistics.example">office@apexlogistics.example</a></li> <!-- REPLACE: email -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="current-year">2026</span> Apex Logistics. All rights reserved.</p>
+        <p class="footer-legal"><a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">·</span> <a href="terms.html">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!-- Libraries (CDN) -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Site scripts -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

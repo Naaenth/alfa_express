@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet — Apex Logistics</title>
+  <meta name="description" content="See the Apex Logistics fleet: curtain-siders, refrigerated trailers, rigid trucks, mega trailers, express vans, and flatbeds — GPS-tracked and maintained for reliable European delivery.">
+  <meta name="theme-color" content="#1E3A8A">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Apex Logistics">
+  <meta property="og:title" content="Fleet — Apex Logistics">
+  <meta property="og:description" content="See the Apex Logistics fleet: curtain-siders, refrigerated trailers, rigid trucks, mega trailers, express vans, and flatbeds — GPS-tracked and maintained for reliable European delivery.">
+  <meta property="og:image" content="assets/images/hero-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Montserrat (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Apex Logistics — home">
+        <img src="assets/images/logo-placeholder.svg" alt="" class="brand-logo" width="40" height="40">
+        <span class="brand-name">Apex Logistics</span> <!-- REPLACE: company name -->
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html" aria-current="page">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="btn btn-accent btn-sm">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in drawer + overlay -->
+  <div class="nav-overlay" id="nav-overlay" hidden></div>
+  <aside class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-nav-head">
+      <span class="brand-name">Apex Logistics</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html" aria-current="page">Fleet</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-foot">
+      <a href="tel:+48123456789"><i class="fa-solid fa-phone" aria-hidden="true"></i> +48 123 456 789</a>
+    </div>
+  </aside>
+  <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Fleet</span>
+        </nav>
+        <p class="eyebrow eyebrow-light" data-aos="fade-up">Our Fleet</p>
+        <h1 data-aos="fade-up" data-aos-delay="50">The right vehicle for every load</h1>
+        <p class="page-hero-lead" data-aos="fade-up" data-aos-delay="100">A modern, GPS-tracked fleet — from city vans to 40-tonne articulated trailers and refrigerated units — maintained to the highest safety standards.</p>
+      </div>
+    </section>
+    <!-- Overview -->
+    <section class="section">
+      <div class="container narrow text-center" data-aos="fade-up">
+        <p class="eyebrow">Fleet overview</p>
+        <h2>Capacity, flexibility, and reliability</h2>
+        <p class="lead">We run and partner with a diverse range of vehicles so we can match capacity precisely to your shipment. Every truck is regularly serviced, telematics-equipped, and driven by trained, vetted professionals — keeping your goods safe and your deliveries predictable.</p>
+      </div>
+    </section>
+    <!-- Vehicle gallery -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">The vehicles</p>
+          <h2>Explore our fleet</h2>
+          <p class="section-subtitle">Swipe or use the arrows to browse vehicle types and specifications.</p>
+        </div>
+        <div class="swiper fleet-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="card vehicle-card">
+                <div class="vehicle-media">
+                  <img src="assets/images/truck1-placeholder.svg" alt="Articulated Curtain-Sider" loading="lazy" width="420" height="280">
+                </div>
+                <div class="vehicle-body">
+                  <h3>Articulated Curtain-Sider</h3>
+                  <p>Our workhorse for palletised European freight, with easy side loading.</p>
+                  <ul class="vehicle-specs"><li><span>Payload</span><strong>24 t</strong></li><li><span>Pallets</span><strong>33 EUR</strong></li><li><span>Volume</span><strong>90 m³</strong></li></ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card vehicle-card">
+                <div class="vehicle-media">
+                  <img src="assets/images/truck2-placeholder.svg" alt="Refrigerated Trailer" loading="lazy" width="420" height="280">
+                </div>
+                <div class="vehicle-body">
+                  <h3>Refrigerated Trailer</h3>
+                  <p>Temperature-controlled transport for food, pharma, and sensitive goods.</p>
+                  <ul class="vehicle-specs"><li><span>Payload</span><strong>22 t</strong></li><li><span>Range</span><strong>-25 to +25 °C</strong></li><li><span>Volume</span><strong>86 m³</strong></li></ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card vehicle-card">
+                <div class="vehicle-media">
+                  <img src="assets/images/truck3-placeholder.svg" alt="Box Rigid Truck" loading="lazy" width="420" height="280">
+                </div>
+                <div class="vehicle-body">
+                  <h3>Box Rigid Truck</h3>
+                  <p>Ideal for regional distribution and multi-drop urban delivery routes.</p>
+                  <ul class="vehicle-specs"><li><span>Payload</span><strong>10 t</strong></li><li><span>Pallets</span><strong>18 EUR</strong></li><li><span>Volume</span><strong>45 m³</strong></li></ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card vehicle-card">
+                <div class="vehicle-media">
+                  <img src="assets/images/truck4-placeholder.svg" alt="Mega Trailer" loading="lazy" width="420" height="280">
+                </div>
+                <div class="vehicle-body">
+                  <h3>Mega Trailer</h3>
+                  <p>Extra internal height for high-volume, lightweight, or bulky cargo.</p>
+                  <ul class="vehicle-specs"><li><span>Payload</span><strong>24 t</strong></li><li><span>Pallets</span><strong>33 EUR</strong></li><li><span>Volume</span><strong>100 m³</strong></li></ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card vehicle-card">
+                <div class="vehicle-media">
+                  <img src="assets/images/truck5-placeholder.svg" alt="Express Delivery Van" loading="lazy" width="420" height="280">
+                </div>
+                <div class="vehicle-body">
+                  <h3>Express Delivery Van</h3>
+                  <p>Fast, agile transport for parcels and urgent same-day consignments.</p>
+                  <ul class="vehicle-specs"><li><span>Payload</span><strong>1.2 t</strong></li><li><span>Pallets</span><strong>3 EUR</strong></li><li><span>Volume</span><strong>11 m³</strong></li></ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card vehicle-card">
+                <div class="vehicle-media">
+                  <img src="assets/images/truck6-placeholder.svg" alt="Flatbed / Oversized" loading="lazy" width="420" height="280">
+                </div>
+                <div class="vehicle-body">
+                  <h3>Flatbed / Oversized</h3>
+                  <p>For machinery, building materials, and abnormal or out-of-gauge loads.</p>
+                  <ul class="vehicle-specs"><li><span>Payload</span><strong>24 t</strong></li><li><span>Length</span><strong>13.6 m</strong></li><li><span>Type</span><strong>Open deck</strong></li></ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <button class="swiper-button-prev" aria-label="Previous vehicle"></button>
+          <button class="swiper-button-next" aria-label="Next vehicle"></button>
+        </div>
+      </div>
+    </section>
+    <!-- Capabilities / specs table -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">At a glance</p>
+          <h2>Capabilities &amp; specifications</h2>
+          <p class="section-subtitle">Typical capacities — exact figures vary by vehicle and configuration.</p>
+        </div>
+        <div class="table-wrap" data-aos="fade-up">
+          <table class="specs-table">
+            <caption class="visually-hidden">Fleet vehicle types and their typical capabilities</caption>
+            <thead>
+              <tr>
+                <th scope="col">Vehicle type</th>
+                <th scope="col">Max payload</th>
+                <th scope="col">Capacity</th>
+                <th scope="col">Best for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Articulated curtain-sider</th><td>24 t</td><td>33 EUR pallets</td><td>General palletised freight</td></tr>
+              <tr><th scope="row">Refrigerated trailer</th><td>22 t</td><td>-25 to +25 °C</td><td>Chilled &amp; frozen goods</td></tr>
+              <tr><th scope="row">Box rigid truck</th><td>10 t</td><td>18 EUR pallets</td><td>Regional multi-drop</td></tr>
+              <tr><th scope="row">Mega trailer</th><td>24 t</td><td>100 m³</td><td>High-volume cargo</td></tr>
+              <tr><th scope="row">Express van</th><td>1.2 t</td><td>11 m³</td><td>Urgent &amp; same-day</td></tr>
+              <tr><th scope="row">Flatbed / oversized</th><td>24 t</td><td>13.6 m deck</td><td>Machinery &amp; abnormal loads</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Coverage note + map -->
+    <section class="section section-alt">
+      <div class="container two-col">
+        <div class="two-col-text" data-aos="fade-right">
+          <p class="eyebrow">Where we go</p>
+          <h2>Coverage across 25 countries</h2>
+          <p>From our Kraków base, our fleet and partner network reach every corner of the European Union and beyond. Whether it is a domestic delivery or a multi-country distribution run, we plan the most efficient route and keep you updated the whole way.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Daily departures on major EU corridors</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Intermodal links for long-haul efficiency</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Last-mile delivery in key cities</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Check your route</a>
+        </div>
+        <div class="two-col-media" data-aos="fade-left">
+          <img src="assets/images/coverage-map-placeholder.svg" alt="Map of Apex Logistics coverage across Europe" loading="lazy" width="600" height="440">
+        </div>
+      </div>
+    </section>
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="container cta-inner" data-aos="fade-up">
+        <div class="cta-text">
+          <h2>Need capacity for an upcoming shipment?</h2>
+          <p>Tell us the load, route, and date — we'll confirm the right vehicle and a fixed price.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-accent">Request a Quote</a>
+          <a href="services.html" class="btn btn-secondary btn-on-dark">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <div class="footer-brand">
+          <img src="assets/images/logo-placeholder.svg" alt="" class="footer-logo" width="36" height="36">
+          <span class="brand-name">Apex Logistics</span>
+        </div>
+        <p class="footer-blurb">Reliable road, warehousing, and supply&nbsp;chain solutions that keep your goods moving across borders — on time, every time.</p>
+        <ul class="social-links" aria-label="Social media">
+          <li><a href="#" aria-label="Apex Logistics on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Services">
+        <h2 class="footer-heading">Services</h2>
+        <ul>
+          <li><a href="services.html">Road Transport</a></li>
+          <li><a href="services.html">Warehousing</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Intermodal</a></li>
+          <li><a href="services.html">Express Delivery</a></li>
+          <li><a href="services.html">Supply Chain Management</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>ul. Przykładowa 12, 30-001 Kraków, Poland</span></li> <!-- REPLACE: address -->
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48123456789">+48 123 456 789</a></li> <!-- REPLACE: phone -->
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:office@apexlogistics.example">office@apexlogistics.example</a></li> <!-- REPLACE: email -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="current-year">2026</span> Apex Logistics. All rights reserved.</p>
+        <p class="footer-legal"><a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">·</span> <a href="terms.html">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!-- Libraries (CDN) -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Site scripts -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

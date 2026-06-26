@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Apex Logistics</title>
+  <meta name="description" content="Contact Apex Logistics in Kraków for quotes, tracking, and support. Use our contact form, call +48 123 456 789, or email office@apexlogistics.example.">
+  <meta name="theme-color" content="#1E3A8A">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Apex Logistics">
+  <meta property="og:title" content="Contact Us — Apex Logistics">
+  <meta property="og:description" content="Contact Apex Logistics in Kraków for quotes, tracking, and support. Use our contact form, call +48 123 456 789, or email office@apexlogistics.example.">
+  <meta property="og:image" content="assets/images/hero-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Montserrat (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Apex Logistics — home">
+        <img src="assets/images/logo-placeholder.svg" alt="" class="brand-logo" width="40" height="40">
+        <span class="brand-name">Apex Logistics</span> <!-- REPLACE: company name -->
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="btn btn-accent btn-sm" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in drawer + overlay -->
+  <div class="nav-overlay" id="nav-overlay" hidden></div>
+  <aside class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-nav-head">
+      <span class="brand-name">Apex Logistics</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-foot">
+      <a href="tel:+48123456789"><i class="fa-solid fa-phone" aria-hidden="true"></i> +48 123 456 789</a>
+    </div>
+  </aside>
+  <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span>
+        </nav>
+        <p class="eyebrow eyebrow-light" data-aos="fade-up">Contact Us</p>
+        <h1 data-aos="fade-up" data-aos-delay="50">Let's plan your next shipment</h1>
+        <p class="page-hero-lead" data-aos="fade-up" data-aos-delay="100">Questions, quotes, or tracking updates — our Kraków team is ready to help and replies to most enquiries within one business day.</p>
+      </div>
+    </section>
+    <!-- Form + company details -->
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-form-wrap" data-aos="fade-up">
+          <h2>Send us a message</h2>
+          <p>Fill in the form and we'll get back to you shortly. Fields marked with <span class="req-star" aria-hidden="true">*</span> are required.</p>
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY"> <!-- REPLACE: Web3Forms access key -->
+            <input type="hidden" name="subject" value="New enquiry from Apex Logistics website">
+            <input type="hidden" name="from_name" value="Apex Logistics Website">
+            <!-- Honeypot anti-spam field -->
+            <input type="checkbox" name="botcheck" class="visually-hidden" style="display:none;" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full name <span class="req-star" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" placeholder="Jane Smith">
+                <span class="field-error" data-error-for="name" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email address <span class="req-star" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="jane@company.com">
+                <span class="field-error" data-error-for="email" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="phone">Phone <span class="optional">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+48 123 456 789">
+                <span class="field-error" data-error-for="phone" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="subject-line">Subject <span class="req-star" aria-hidden="true">*</span></label>
+                <input type="text" id="subject-line" name="subject_line" required aria-required="true" placeholder="Quote request">
+                <span class="field-error" data-error-for="subject-line" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message <span class="req-star" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Tell us about your goods, route, and timeline…"></textarea>
+              <span class="field-error" data-error-for="message" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field form-consent">
+              <label class="checkbox-label">
+                <input type="checkbox" id="consent" name="consent" required aria-required="true">
+                <span>I agree that my details will be used to respond to my enquiry, as described in the <a href="privacy.html">Privacy Policy</a>. <span class="req-star" aria-hidden="true">*</span></span>
+              </label>
+              <span class="field-error" data-error-for="consent" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit">Send Message</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact-details" data-aos="fade-up" data-aos-delay="100">
+          <h2>Company details</h2>
+          <ul class="contact-cards">
+            <li class="contact-card">
+              <span class="contact-card-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+              <div><h3>Address</h3><p>ul. Przykładowa 12, 30-001 Kraków, Poland</p></div> <!-- REPLACE: address -->
+            </li>
+            <li class="contact-card">
+              <span class="contact-card-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+              <div><h3>Phone</h3><p><a href="tel:+48123456789">+48 123 456 789</a></p></div> <!-- REPLACE: phone -->
+            </li>
+            <li class="contact-card">
+              <span class="contact-card-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+              <div><h3>Email</h3><p><a href="mailto:office@apexlogistics.example">office@apexlogistics.example</a></p></div> <!-- REPLACE: email -->
+            </li>
+            <li class="contact-card">
+              <span class="contact-card-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
+              <div><h3>Opening hours</h3><p>Mon–Fri: 08:00–18:00 CET<br>Sat–Sun: Closed</p></div>
+            </li>
+          </ul>
+          <div class="contact-social">
+            <h3>Follow us</h3>
+            <ul class="social-links social-links-dark" aria-label="Social media">
+              <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+              <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+              <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- Google Map -->
+    <section class="section section-alt map-section">
+      <div class="container">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">Find us</p>
+          <h2>Our location</h2>
+        </div>
+      </div>
+      <div class="map-outer" data-aos="fade-up">
+        <div id="map" aria-label="Map showing the Apex Logistics office location"></div>
+        <p id="map-fallback" class="map-fallback" hidden>
+          <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+          Map cannot be loaded. Please use the address above for directions:
+          ul. Przykładowa 12, 30-001 Kraków, Poland.
+        </p>
+      </div>
+    </section>
+    <!-- FAQ accordion -->
+    <section class="section faq-section">
+      <div class="container narrow">
+        <div class="section-head section-head-center" data-aos="fade-up">
+          <p class="eyebrow">Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <ul class="accordion">
+          <li class="accordion-item" data-aos="fade-up">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-0" id="faq-trigger-0">
+                <span>How do I get a shipping quote?</span>
+                <i class="fa-solid fa-chevron-down accordion-icon" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-0" role="region" aria-labelledby="faq-trigger-0" hidden>
+              <div class="accordion-panel-inner"><p>Use the contact form above or email us with your goods, collection and delivery addresses, weight or pallet count, and target dates. We'll reply with a clear, fixed quote — usually within one business day.</p></div>
+            </div>
+          </li>
+          <li class="accordion-item" data-aos="fade-up">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+                <span>Which countries do you deliver to?</span>
+                <i class="fa-solid fa-chevron-down accordion-icon" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" hidden>
+              <div class="accordion-panel-inner"><p>We operate across 25 countries throughout the European Union and beyond, with daily departures on major corridors. If you're unsure whether we cover a route, just ask.</p></div>
+            </div>
+          </li>
+          <li class="accordion-item" data-aos="fade-up">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+                <span>Can I track my shipment in real time?</span>
+                <i class="fa-solid fa-chevron-down accordion-icon" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2" hidden>
+              <div class="accordion-panel-inner"><p>Yes. Every shipment is GPS-tracked, and you'll receive proactive status updates at each milestone. Larger or ongoing clients also get access to a live client portal.</p></div>
+            </div>
+          </li>
+          <li class="accordion-item" data-aos="fade-up">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+                <span>Do you handle customs and documentation?</span>
+                <i class="fa-solid fa-chevron-down accordion-icon" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
+              <div class="accordion-panel-inner"><p>We do. Our in-house customs specialists prepare import and export documentation, manage duties, and clear shipments so your freight keeps moving across borders.</p></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <div class="footer-brand">
+          <img src="assets/images/logo-placeholder.svg" alt="" class="footer-logo" width="36" height="36">
+          <span class="brand-name">Apex Logistics</span>
+        </div>
+        <p class="footer-blurb">Reliable road, warehousing, and supply&nbsp;chain solutions that keep your goods moving across borders — on time, every time.</p>
+        <ul class="social-links" aria-label="Social media">
+          <li><a href="#" aria-label="Apex Logistics on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Apex Logistics on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Services">
+        <h2 class="footer-heading">Services</h2>
+        <ul>
+          <li><a href="services.html">Road Transport</a></li>
+          <li><a href="services.html">Warehousing</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Intermodal</a></li>
+          <li><a href="services.html">Express Delivery</a></li>
+          <li><a href="services.html">Supply Chain Management</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>ul. Przykładowa 12, 30-001 Kraków, Poland</span></li> <!-- REPLACE: address -->
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48123456789">+48 123 456 789</a></li> <!-- REPLACE: phone -->
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:office@apexlogistics.example">office@apexlogistics.example</a></li> <!-- REPLACE: email -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="current-year">2026</span> Apex Logistics. All rights reserved.</p>
+        <p class="footer-legal"><a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">·</span> <a href="terms.html">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!-- Libraries (CDN) -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Site scripts -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <!-- Contact-page scripts -->
+  <script src="js/contact.js" defer></script>
+  <script src="js/googlemaps.js" defer></script>
+  <!-- Google Maps JavaScript API (loads after googlemaps.js so initMap is defined) -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    onerror="if(window.handleMapError){window.handleMapError();}"></script>
+  <!-- REPLACE: Google Maps API key -->
+</body>
+</html>
