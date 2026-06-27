@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/><stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="280" fill="url(#bg4)" rx="10"/>
+  <rect x="0" y="210" width="420" height="70" fill="#374151"/>
+  <rect x="15" y="232" width="55" height="5" rx="2" fill="#fbbf24" opacity="0.7"/>
+  <rect x="140" y="232" width="55" height="5" rx="2" fill="#fbbf24" opacity="0.7"/>
+  <rect x="270" y="232" width="55" height="5" rx="2" fill="#fbbf24" opacity="0.7"/>
+  <!-- Mega trailer — taller, longer -->
+  <rect x="10" y="100" width="270" height="118" rx="5" fill="#1e3a8a"/>
+  <rect x="10" y="100" width="270" height="16" rx="5" fill="#059669"/>
+  <rect x="10" y="210" width="270" height="8"  rx="3" fill="#059669"/>
+  <rect x="10" y="148" width="270" height="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="145" y="158" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="13" fill="white">ALFA EXPRESS</text>
+  <text x="145" y="174" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="9" fill="#6ee7b7" letter-spacing="2">MEGA TRAILER</text>
+  <rect x="275" y="100" width="5" height="118" rx="2" fill="#162d6e"/>
+  <!-- Cab -->
+  <path d="M280 118 L280 215 L395 215 L395 162 L352 118 Z" fill="#1d4ed8"/>
+  <rect x="288" y="126" width="60" height="50" rx="3" fill="#93c5fd" opacity="0.85"/>
+  <rect x="350" y="132" width="37" height="42" rx="2" fill="#bfdbfe" opacity="0.75"/>
+  <line x1="350" y1="126" x2="350" y2="215" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <rect x="373" y="188" width="22" height="22" rx="3" fill="#374151"/>
+  <rect x="376" y="152" width="15" height="10" rx="2" fill="#fef3c7"/>
+  <rect x="377" y="143" width="11" height="5" rx="2" fill="#F97316"/>
+  <!-- exhaust -->
+  <rect x="362" y="82" width="6" height="40" rx="3" fill="#4b5563"/>
+  <ellipse cx="365" cy="78" rx="7" ry="5" fill="#9ca3af" opacity="0.3"/>
+  <!-- Wheels -->
+  <circle cx="70"  cy="222" r="22" fill="#111827"/><circle cx="70"  cy="222" r="14" fill="#374151"/><circle cx="70"  cy="222" r="6" fill="#111827"/>
+  <circle cx="165" cy="222" r="22" fill="#111827"/><circle cx="165" cy="222" r="14" fill="#374151"/><circle cx="165" cy="222" r="6" fill="#111827"/>
+  <circle cx="336" cy="222" r="20" fill="#111827"/><circle cx="336" cy="222" r="13" fill="#374151"/><circle cx="336" cy="222" r="5" fill="#111827"/>
+  <circle cx="375" cy="223" r="16" fill="#111827"/><circle cx="375" cy="223" r="10" fill="#374151"/>
+</svg>

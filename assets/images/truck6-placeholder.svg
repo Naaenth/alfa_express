@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2f8"/><stop offset="100%" stop-color="#fce7f3"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="280" fill="url(#bg6)" rx="10"/>
+  <rect x="0" y="210" width="420" height="70" fill="#374151"/>
+  <rect x="20"  y="232" width="55" height="5" rx="2" fill="#fbbf24" opacity="0.7"/>
+  <rect x="150" y="232" width="55" height="5" rx="2" fill="#fbbf24" opacity="0.7"/>
+  <rect x="290" y="232" width="55" height="5" rx="2" fill="#fbbf24" opacity="0.7"/>
+  <!-- Flatbed platform -->
+  <rect x="15" y="195" width="280" height="14" rx="3" fill="#92400e"/>
+  <rect x="15" y="195" width="280" height="5"  rx="2" fill="#b45309"/>
+  <!-- Flatbed cross beams -->
+  <rect x="40"  y="195" width="6" height="14" fill="#78350f"/>
+  <rect x="90"  y="195" width="6" height="14" fill="#78350f"/>
+  <rect x="140" y="195" width="6" height="14" fill="#78350f"/>
+  <rect x="190" y="195" width="6" height="14" fill="#78350f"/>
+  <rect x="240" y="195" width="6" height="14" fill="#78350f"/>
+  <!-- Cargo on flatbed — large machinery/crate -->
+  <rect x="25"  y="148" width="90" height="48" rx="3" fill="#4b5563"/>
+  <rect x="27"  y="150" width="86" height="10" rx="2" fill="#6b7280"/>
+  <rect x="35"  y="162" width="12" height="32" rx="2" fill="#374151"/>
+  <rect x="55"  y="162" width="12" height="32" rx="2" fill="#374151"/>
+  <rect x="75"  y="162" width="12" height="32" rx="2" fill="#374151"/>
+  <rect x="95"  y="162" width="12" height="32" rx="2" fill="#374151"/>
+  <!-- Second crate -->
+  <rect x="125" y="158" width="80" height="38" rx="3" fill="#1e3a8a"/>
+  <rect x="127" y="160" width="76" height="8" rx="2" fill="#1d4ed8"/>
+  <text x="165" y="186" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="9" font-weight="700" fill="white">ALFA EXPRESS</text>
+  <!-- Securing straps -->
+  <line x1="25"  y1="196" x2="55"  y2="148" stroke="#F97316" stroke-width="2.5" opacity="0.8"/>
+  <line x1="110" y1="196" x2="80"  y2="148" stroke="#F97316" stroke-width="2.5" opacity="0.8"/>
+  <line x1="125" y1="196" x2="140" y2="158" stroke="#F97316" stroke-width="2.5" opacity="0.8"/>
+  <line x1="200" y1="196" x2="200" y2="158" stroke="#F97316" stroke-width="2.5" opacity="0.8"/>
+  <!-- Third item — pipes/cylinders -->
+  <rect x="215" y="172" width="70" height="24" rx="10" fill="#6b7280"/>
+  <ellipse cx="215" cy="184" rx="12" ry="12" fill="#4b5563"/>
+  <ellipse cx="285" cy="184" rx="12" ry="12" fill="#4b5563"/>
+  <rect x="215" y="176" width="70" height="5" fill="#9ca3af" opacity="0.4"/>
+  <!-- Cab -->
+  <path d="M295 140 L295 210 L410 210 L410 170 L368 140 Z" fill="#1d4ed8"/>
+  <rect x="303" y="148" width="60" height="46" rx="3" fill="#93c5fd" opacity="0.85"/>
+  <rect x="365" y="152" width="36" height="40" rx="2" fill="#bfdbfe" opacity="0.75"/>
+  <line x1="365" y1="148" x2="365" y2="210" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <rect x="390" y="186" width="20" height="20" rx="3" fill="#374151"/>
+  <rect x="392" y="158" width="14" height="9" rx="2" fill="#fef3c7"/>
+  <rect x="393" y="150" width="10" height="5" rx="2" fill="#F97316"/>
+  <!-- Exhaust -->
+  <rect x="376" y="105" width="6" height="38" rx="3" fill="#4b5563"/>
+  <ellipse cx="379" cy="102" rx="6" ry="4" fill="#9ca3af" opacity="0.3"/>
+  <!-- Wheels -->
+  <circle cx="80"  cy="222" r="20" fill="#111827"/><circle cx="80"  cy="222" r="13" fill="#374151"/><circle cx="80"  cy="222" r="5" fill="#111827"/>
+  <circle cx="175" cy="222" r="20" fill="#111827"/><circle cx="175" cy="222" r="13" fill="#374151"/><circle cx="175" cy="222" r="5" fill="#111827"/>
+  <circle cx="352" cy="222" r="20" fill="#111827"/><circle cx="352" cy="222" r="13" fill="#374151"/><circle cx="352" cy="222" r="5" fill="#111827"/>
+  <circle cx="392" cy="223" r="16" fill="#111827"/><circle cx="392" cy="223" r="10" fill="#374151"/>
+  <!-- Warning stripes on cab front -->
+  <rect x="400" y="196" width="10" height="14" rx="1" fill="#F97316" opacity="0.8"/>
+</svg>

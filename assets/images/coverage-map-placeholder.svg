@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <defs>
+    <linearGradient id="mapbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="420" fill="url(#mapbg)" rx="12"/>
+
+  <!-- Europe simplified outline shapes -->
+  <!-- Iberia -->
+  <path d="M120 200 L160 185 L185 195 L190 230 L165 255 L130 248 L112 228 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- France -->
+  <path d="M165 155 L210 145 L238 158 L242 185 L218 200 L190 198 L170 185 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- UK -->
+  <path d="M165 105 L188 95 L200 115 L190 140 L168 142 L155 125 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Scandinavia / Norway-Sweden -->
+  <path d="M240 60 L270 45 L300 55 L305 90 L285 120 L260 130 L240 115 L232 88 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Denmark -->
+  <path d="M240 115 L260 108 L265 130 L245 138 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Germany / Benelux -->
+  <path d="M210 145 L265 132 L290 148 L288 185 L260 198 L238 190 L218 200 L210 178 Z" fill="#93c5fd" stroke="#60a5fa" stroke-width="1.5"/>
+  <!-- Poland -->
+  <path d="M288 148 L340 138 L360 155 L358 188 L330 200 L295 195 L288 178 Z" fill="#60a5fa" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Czech / Austria / Slovakia -->
+  <path d="M288 185 L330 178 L358 188 L358 210 L325 222 L295 218 Z" fill="#93c5fd" stroke="#60a5fa" stroke-width="1.5"/>
+  <!-- Hungary / Romania -->
+  <path d="M325 218 L370 205 L398 215 L400 248 L370 262 L340 255 L322 238 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Italy -->
+  <path d="M218 200 L250 195 L272 215 L278 245 L268 275 L248 285 L232 268 L218 240 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Balkans -->
+  <path d="M295 218 L325 222 L340 255 L320 278 L295 268 L278 248 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Baltic states -->
+  <path d="M318 105 L350 98 L362 118 L355 140 L335 145 L318 130 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Ukraine / Belarus area -->
+  <path d="M360 118 L408 108 L430 128 L425 165 L395 178 L362 172 L355 148 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Finland -->
+  <path d="M300 45 L335 35 L355 55 L350 95 L320 100 L305 80 Z" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+
+  <!-- Sea / water area hint -->
+  <ellipse cx="118" cy="170" rx="18" ry="30" fill="#bae6fd" opacity="0.4"/>
+
+  <!-- Route lines connecting cities -->
+  <polyline points="192,238 240,200 290,170 340,148" stroke="#1E3A8A" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.6"/>
+  <polyline points="290,170 340,148 390,128" stroke="#1E3A8A" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+  <polyline points="250,195 278,245 295,268" stroke="#F97316" stroke-width="1.5" fill="none" stroke-dasharray="5 4" opacity="0.5"/>
+
+  <!-- City pins -->
+  <!-- Warsaw (HQ) -->
+  <circle cx="334" cy="148" r="10" fill="#F97316" opacity="0.2"/>
+  <circle cx="334" cy="148" r="6"  fill="#F97316" opacity="0.7"/>
+  <circle cx="334" cy="148" r="3"  fill="#F97316"/>
+  <text x="334" y="136" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e3a8a">Warsaw</text>
+
+  <!-- Berlin -->
+  <circle cx="270" cy="160" r="7" fill="#1E3A8A" opacity="0.6"/>
+  <circle cx="270" cy="160" r="3" fill="#1E3A8A"/>
+  <text x="270" y="149" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#374151">Berlin</text>
+
+  <!-- Paris -->
+  <circle cx="196" cy="175" r="7" fill="#1E3A8A" opacity="0.6"/>
+  <circle cx="196" cy="175" r="3" fill="#1E3A8A"/>
+  <text x="196" y="164" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#374151">Paris</text>
+
+  <!-- Prague -->
+  <circle cx="300" cy="188" r="6" fill="#1E3A8A" opacity="0.5"/>
+  <circle cx="300" cy="188" r="3" fill="#1E3A8A"/>
+
+  <!-- Vienna -->
+  <circle cx="318" cy="208" r="6" fill="#1E3A8A" opacity="0.5"/>
+  <circle cx="318" cy="208" r="3" fill="#1E3A8A"/>
+
+  <!-- Kiev -->
+  <circle cx="390" cy="148" r="6" fill="#1E3A8A" opacity="0.5"/>
+  <circle cx="390" cy="148" r="3" fill="#1E3A8A"/>
+  <text x="398" y="145" font-family="Inter,sans-serif" font-size="10" fill="#374151">Kyiv</text>
+
+  <!-- Riga -->
+  <circle cx="330" cy="112" r="6" fill="#1E3A8A" opacity="0.5"/>
+  <circle cx="330" cy="112" r="3" fill="#1E3A8A"/>
+
+  <!-- Coverage pulse rings on Warsaw -->
+  <circle cx="334" cy="148" r="18" fill="none" stroke="#F97316" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="334" cy="148" r="28" fill="none" stroke="#F97316" stroke-width="1" opacity="0.15"/>
+
+  <!-- Legend -->
+  <rect x="420" y="30" width="162" height="110" rx="8" fill="white" opacity="0.9" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="432" y="52" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="12" fill="#1e3a8a">COVERAGE AREA</text>
+  <circle cx="432" cy="68" r="5" fill="#F97316"/>
+  <text x="444" y="73" font-family="Inter,sans-serif" font-size="11" fill="#374151">Headquarters</text>
+  <circle cx="432" cy="86" r="5" fill="#1e3a8a" opacity="0.6"/>
+  <text x="444" y="91" font-family="Inter,sans-serif" font-size="11" fill="#374151">Partner hub</text>
+  <line x1="424" y1="104" x2="444" y2="104" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="450" y="108" font-family="Inter,sans-serif" font-size="11" fill="#374151">Main routes</text>
+  <line x1="424" y1="120" x2="444" y2="120" stroke="#F97316" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="450" y="124" font-family="Inter,sans-serif" font-size="11" fill="#374151">Express lanes</text>
+
+  <!-- Title label -->
+  <text x="300" y="400" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="14" fill="#1e3a8a" opacity="0.6">25+ Countries · Europe-wide Network</text>
+</svg>

@@ -1,0 +1,122 @@
+/* ==========================================================================
+   variables.css — Alfa Express
+   CSS custom properties + global reset + base styles
+   ========================================================================== */
+
+:root {
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: clamp(1rem, 4vw, 1.5rem);
+
+  /* Brand colours */
+  --color-primary:      #911421;
+  --color-primary-dark: #6e0f18;
+  --color-primary-tint: #fde8ea;
+  --color-accent:       #F97316;
+  --color-accent-dark:  #EA6800;
+  --color-accent-tint:  #FFF7ED;
+
+  /* Neutrals */
+  --color-white:   #FFFFFF;
+  --color-dark:    #111827;
+  --color-gray-100:#F9FAFB;
+  --color-gray-400:#9CA3AF;
+  --color-gray-700:#374151;
+  --color-border:  #E5E7EB;
+
+  /* Feedback */
+  --color-success: #10B981;
+  --color-error:   #DC2626;
+
+  /* Typography */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Spacing — 8 px base */
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-5:  40px;
+  --space-6:  48px;
+  --space-7:  56px;
+  --space-8:  64px;
+  --space-9:  72px;
+  --space-10: 80px;
+  --space-11: 88px;
+  --space-12: 96px;
+
+  /* Radii */
+  --radius-btn:  8px;
+  --radius-card: 12px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-card:       0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-card-hover: 0 10px 28px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.08);
+  --shadow-header:     0 2px 14px rgba(0,0,0,.10);
+
+  /* Z-index scale */
+  --z-skip:    1000;
+  --z-header:   100;
+  --z-overlay:  200;
+  --z-drawer:   300;
+
+  /* Motion */
+  --transition: .22s ease;
+}
+
+/* ========================== RESET & BASE ================================== */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+ul, ol { list-style: none; }
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-dark);
+}
+
+p { max-width: 72ch; }
+
+/* Ensure [hidden] always wins over display:flex/grid overrides */
+[hidden] { display: none !important; }
+
+/* Accordion panel — hidden by default, animated by JS */
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .32s ease;
+}
