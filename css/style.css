@@ -239,7 +239,7 @@ h4 { font-size: 1.25rem; font-weight: 600; }
   flex-shrink: 0;
 }
 .brand:hover { color: var(--color-dark); }
-.brand-logo { height: 38px; width: auto; object-fit: contain; }
+.brand-logo { height: 52px; width: auto; object-fit: contain; }
 .brand-name {
   font-family: var(--font-heading);
   font-weight: 800;
@@ -1587,7 +1587,7 @@ body.no-scroll {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+  grid-template-columns: 1.8fr 1fr 1.4fr;
   gap: var(--space-6);
   padding-block: var(--space-8);
 }
@@ -1642,6 +1642,134 @@ body.no-scroll {
 .footer-legal a { color: rgba(255, 255, 255, 0.7); }
 .footer-legal a:hover { color: var(--color-accent); }
 .footer-legal span { margin-inline: 6px; }
+.footer-registration {
+  text-align: center;
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+  padding: 0 1rem 0.75rem;
+  letter-spacing: 0.02em;
+}
+.company-info-table { width: 100%; border-collapse: collapse; }
+.company-info-table th,
+.company-info-table td { padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--color-border, #e5e7eb); font-size: 0.9375rem; }
+.company-info-table th { width: 38%; font-weight: 600; color: var(--color-dark); white-space: nowrap; }
+.company-info-table td { color: var(--color-body); }
+.company-info-table tbody tr:last-child th,
+.company-info-table tbody tr:last-child td { border-bottom: none; }
+
+/* Google Maps embeds (home + contact) — one pinned map per location */
+.map-embed {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  border: 0;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  display: block;
+}
+.map-duo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+.map-figure { margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.map-figure .map-embed { min-height: 260px; height: 260px; }
+.map-figure figcaption {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+.map-figure figcaption i { color: var(--color-primary); }
+.map-section .map-figure .map-embed { min-height: 340px; height: 340px; }
+
+/* Visible contact bar (careers vacancies) */
+.contact-cta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-top: var(--space-3);
+}
+.contact-cta-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  transition: background var(--transition), transform var(--transition);
+}
+.contact-cta-bar a:hover { background: var(--color-dark); transform: translateY(-2px); }
+.contact-cta-bar a.cta-mail { background: var(--color-accent); }
+.contact-cta-bar a.cta-mail:hover { background: var(--color-dark); }
+.contact-cta-bar i { font-size: 0.95em; }
+
+/* Trailer specifications (fleet) */
+.trailer-specs { display: flex; flex-direction: column; gap: var(--space-5); }
+.trailer-spec {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-5);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+.trailer-spec-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: var(--color-dark);
+  margin: 0 0 var(--space-1);
+  padding-top: var(--space-2);
+  border-top: 4px solid var(--color-primary);
+  display: inline-block;
+}
+.trailer-spec h4 {
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  margin: var(--space-2) 0 var(--space-1);
+}
+.trailer-spec dl { margin: 0; display: grid; gap: 0.35rem; }
+.trailer-spec dl div { display: flex; justify-content: space-between; gap: 1rem; max-width: 360px; padding-bottom: 0.35rem; border-bottom: 1px dashed var(--color-border); }
+.trailer-spec dt { color: var(--color-gray-700); }
+.trailer-spec dd { margin: 0; font-weight: 600; color: var(--color-dark); white-space: nowrap; }
+.trailer-spec-media { text-align: center; }
+.trailer-spec-media img { width: 100%; max-width: 360px; height: auto; }
+
+/* Footer author credit */
+.footer-author { margin: 0; }
+.footer-author a { color: rgba(255, 255, 255, 0.75); }
+.footer-author a:hover { color: var(--color-accent); }
+
+/* Language switcher */
+.main-nav { display: flex; align-items: center; gap: var(--space-3); }
+.lang-switcher { display: inline-flex; align-items: center; gap: 2px; margin-left: var(--space-2); }
+.lang-btn {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-gray-700);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.35rem 0.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+.lang-btn:hover { color: var(--color-primary); border-color: var(--color-primary); }
+.lang-btn.is-active { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
+.mobile-nav .lang-switcher { margin: var(--space-3) 0 0; padding: 0 var(--space-4); }
 
 /* AOS safety: if JS/AOS fails to run, never leave content invisible */
 .no-js [data-aos] { opacity: 1 !important; transform: none !important; }

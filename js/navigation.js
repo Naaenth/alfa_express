@@ -49,6 +49,12 @@
   }
 
   /* ---------- Accordion (contact/FAQ page) ------------------------------- */
+  /* Panels ship with a [hidden] attribute (display:none !important) which would
+     block the max-height animation — strip it so CSS max-height:0 controls them. */
+  document.querySelectorAll('.accordion-panel').forEach(function (panel) {
+    panel.removeAttribute('hidden');
+  });
+
   document.querySelectorAll('.accordion-trigger').forEach(function (trigger) {
     trigger.addEventListener('click', function () {
       var isExpanded = this.getAttribute('aria-expanded') === 'true';

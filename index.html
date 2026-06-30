@@ -49,11 +49,15 @@
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="fleet.html">Fleet</a></li>
           <li><a href="careers.html">Careers</a></li>
           <li><a href="contact.html" class="btn btn-primary btn-sm">Contact</a></li>
         </ul>
+        <div class="lang-switcher" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="uk">UK</button>
+          <button type="button" class="lang-btn" data-lang="pl">PL</button>
+        </div>
       </nav>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
@@ -74,13 +78,17 @@
     <ul class="mobile-nav-list">
       <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
         <li><a href="fleet.html">Fleet</a></li>
         <li><a href="careers.html">Careers</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="lang-switcher" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="uk">UK</button>
+      <button type="button" class="lang-btn" data-lang="pl">PL</button>
+    </div>
     <div class="mobile-nav-foot">
-      <a href="tel:+48572821187"><i class="fa-solid fa-phone" aria-hidden="true"></i> +48 572 821 187</a>
+      <a href="tel:+48571975922"><i class="fa-solid fa-phone" aria-hidden="true"></i> +48 571 975 922</a>
     </div>
   </aside>
   <main id="main">
@@ -94,7 +102,7 @@
           <p class="hero-lead">Alfa Express plans, ships, and tracks your freight by road, rail, and sea — combining a modern fleet with real-time visibility so your goods arrive on time, every time.</p>
           <div class="hero-actions">
             <a href="contact.html" class="btn btn-accent">Get a Free Quote</a>
-            <a href="services.html" class="btn btn-secondary btn-on-dark">Explore Services</a>
+            <a href="fleet.html" class="btn btn-secondary btn-on-dark">View Our Fleet</a>
           </div>
           <ul class="hero-highlights">
             <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Live shipment tracking</li>
@@ -109,20 +117,6 @@
             <span class="hero-badge-label">On-time delivery</span>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Trust bar -->
-    <section class="trust-bar" aria-label="Our partners">
-      <div class="container">
-        <p class="trust-label">Trusted by supply chain teams across Europe</p>
-        <ul class="trust-logos">
-          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 1" loading="lazy" width="140" height="48"></li>
-          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 2" loading="lazy" width="140" height="48"></li>
-          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 3" loading="lazy" width="140" height="48"></li>
-          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 4" loading="lazy" width="140" height="48"></li>
-          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 5" loading="lazy" width="140" height="48"></li>
-          <li><img src="assets/images/partner-logo-placeholder.svg" alt="Partner company 6" loading="lazy" width="140" height="48"></li>
-        </ul>
       </div>
     </section>
     <!-- Services overview -->
@@ -372,14 +366,14 @@
           <ul class="contact-list">
             <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span><strong>HQ:</strong> Głogoczów 944 / 1, 32-444 Głogoczów, Polska</span></li>
             <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span><strong>Biuro:</strong> Bosaków 5A, 31-476 Kraków</span></li>
-            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48572821187">+48 572 821 187</a></li> <!-- REPLACE: phone -->
-            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:office@alfaexpress.example">office@alfaexpress.example</a></li> <!-- REPLACE: email -->
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48571975922">+48 571 975 922</a></li> <!-- REPLACE: phone -->
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:central.alfa.express@gmail.com">central.alfa.express@gmail.com</a></li> <!-- REPLACE: email -->
             <li><i class="fa-solid fa-clock" aria-hidden="true"></i> <span>Mon–Fri, 08:00–18:00 CET</span></li>
           </ul>
           <a href="contact.html" class="btn btn-primary">Contact us</a>
         </div>
         <div class="home-contact-media" data-aos="fade-left">
-          <img src="assets/images/coverage-map-placeholder.svg" alt="Map showing Alfa Express coverage across Europe" loading="lazy" width="600" height="420">
+          <iframe class="map-embed" src="https://www.google.com/maps?saddr=49.8607,19.8520&amp;daddr=50.0740,19.9745&amp;output=embed" title="Google map showing Alfa Express HQ in Głogoczów and office in Kraków" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -390,7 +384,7 @@
     <div class="container footer-grid">
       <div class="footer-col footer-about">
         <div class="footer-brand">
-          <img src="assets/images/logo_nobg.png" alt="" class="footer-logo" width="36" height="36">
+          <img src="assets/images/logo.png" alt="" class="footer-logo" width="36" height="36">
           <span class="brand-name">Alfa Express</span>
         </div>
         <p class="footer-blurb">Reliable road, warehousing, and supply&nbsp;chain solutions that keep your goods moving across borders — on time, every time.</p>
@@ -401,22 +395,9 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="fleet.html">Fleet</a></li>
           <li><a href="careers.html">Careers</a></li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer-col" aria-label="Services">
-        <h2 class="footer-heading">Services</h2>
-        <ul>
-          <li><a href="services.html">Road Transport</a></li>
-          <li><a href="services.html">Warehousing</a></li>
-          <li><a href="services.html">Customs Clearance</a></li>
-          <li><a href="services.html">Intermodal</a></li>
-          <li><a href="services.html">Express Delivery</a></li>
-          <li><a href="services.html">Supply Chain Management</a></li>
         </ul>
       </nav>
 
@@ -425,8 +406,8 @@
         <ul class="footer-contact">
           <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Głogoczów 944 / 1, 32-444 Głogoczów</span></li>
           <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Bosaków 5A, 31-476 Kraków</span></li>
-          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48572821187">+48 572 821 187</a></li> <!-- REPLACE: phone -->
-          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:office@alfaexpress.example">office@alfaexpress.example</a></li> <!-- REPLACE: email -->
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48571975922">+48 571 975 922</a></li> <!-- REPLACE: phone -->
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:central.alfa.express@gmail.com">central.alfa.express@gmail.com</a></li> <!-- REPLACE: email -->
         </ul>
       </div>
     </div>
@@ -436,6 +417,8 @@
         <p>&copy; <span id="current-year">2026</span> Alfa Express. All rights reserved.</p>
         <p class="footer-legal"><a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">·</span> <a href="terms.html">Terms of Use</a></p>
       </div>
+      <p class="footer-registration">Alfa Express Sp. z o.o. &nbsp;&middot;&nbsp; KRS&nbsp;0000914093 &nbsp;&middot;&nbsp; NIP&nbsp;9492249163 &nbsp;&middot;&nbsp; REGON&nbsp;389560996</p>
+      <p class="footer-registration footer-author">Website by <a href="https://github.com/naaenth" target="_blank" rel="noopener">Nikita Pastushenko</a></p>
     </div>
   </footer>
 
@@ -444,6 +427,8 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Site scripts -->
+  <script src="js/i18n-data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
   <script src="js/navigation.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
