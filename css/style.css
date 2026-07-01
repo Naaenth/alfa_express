@@ -1685,6 +1685,7 @@ body.no-scroll {
 }
 .map-figure figcaption i { color: var(--color-primary); }
 .map-section .map-figure .map-embed { min-height: 340px; height: 340px; }
+.map-section .map-duo { margin-top: var(--space-4); }
 
 /* Visible contact bar (careers vacancies) */
 .contact-cta-bar {

@@ -69,7 +69,7 @@ Object.assign(window.ALFA_DICT.pl, {
   "On-time delivery": "Dostawa na czas",
   "What we do": "Czym się zajmujemy",
   "Logistics services built around your deadline": "Usługi logistyczne dopasowane do Twoich terminów",
-  "From a single pallet to a full supply chain, we match the right mode and route to every shipment.": "Od pojedynczej palety po cały łańcuch dostaw — dobieramy właściwy środek transportu i trasę do każdej przesyłki.",
+  "From a single pallet to a full supply chain, we match the route to every shipment.": "Od pojedynczej palety po cały łańcuch dostaw — dobieramy trasę do każdej przesyłki.",
   "Road Transport": "Transport drogowy",
   "Full-load and groupage road freight across Poland and the EU, with live tracking from pickup to delivery.": "Transport całopojazdowy i drobnicowy po Polsce i UE, ze śledzeniem na żywo od odbioru do dostawy.",
   "Warehousing": "Magazynowanie",
@@ -129,18 +129,18 @@ Object.assign(window.ALFA_DICT.pl, {
   "Mon–Fri, 08:00–18:00 CET": "Pn–Pt, 08:00–18:00 CET"
 });
 Object.assign(window.ALFA_DICT.uk, {
-  "Global Logistics & Freight Forwarding": "Глобальна логістика та експедирування",
+  "Global Logistics & Freight Forwarding": "Глобальна логістика та спедиція",
   "Moving Your Business Forward.": "Рухаємо ваш бізнес уперед.",
-  "Alfa Express plans, ships, and tracks your freight by road, rail, and sea — combining a modern fleet with real-time visibility so your goods arrive on time, every time.": "Alfa Express планує, відправляє та відстежує ваші вантажі автомобільним, залізничним і морським транспортом — поєднуючи сучасний автопарк із відстеженням у реальному часі, щоб ваші товари прибували вчасно.",
+  "Alfa Express plans, ships, and tracks your freight by road, rail, and sea — combining a modern fleet with real-time visibility so your goods arrive on time, every time.": "Alfa Express планує, відправляє та відстежує ваші вантажі автомобільним транспортом — поєднуючи сучасний автопарк із відстеженням у реальному часі, щоб ваші товари прибували вчасно.",
   "Live shipment tracking": "Відстеження вантажів у реальному часі",
   "25-country coverage": "Покриття у 25 країнах",
   "Dedicated account manager": "Персональний менеджер",
   "On-time delivery": "Доставка вчасно",
   "What we do": "Чим ми займаємося",
   "Logistics services built around your deadline": "Логістичні послуги, орієнтовані на ваші терміни",
-  "From a single pallet to a full supply chain, we match the right mode and route to every shipment.": "Від однієї палети до повного ланцюга постачання — ми підбираємо оптимальний вид транспорту та маршрут для кожного відправлення.",
-  "Road Transport": "Автоперевезення",
-  "Full-load and groupage road freight across Poland and the EU, with live tracking from pickup to delivery.": "Повнокомплектні та збірні автоперевезення Польщею та ЄС із відстеженням у реальному часі від забору до доставки.",
+  "From a single pallet to a full supply chain, we match the route to every shipment.": "Від однієї палети до повного ланцюга постачання — ми підбираємо маршрут для кожного відправлення.",
+  "Road Transport": "Автомобільні перевезення",
+  "Full-load and groupage road freight across Poland and the EU, with live tracking from pickup to delivery.": "Автоперевезення повним (FTL) та збірним (LTL) завантаженням Польщею та ЄС із відстеженням у реальному часі від завантаження до доставки.",
   "Warehousing": "Складування",
   "Secure short- and long-term storage, pick-and-pack, and inventory management in modern facilities.": "Безпечне коротко- та довгострокове зберігання, комплектація та управління запасами на сучасних складах.",
   "Customs Clearance": "Митне оформлення",
@@ -677,4 +677,14 @@ Object.assign(window.ALFA_DICT.uk, {
 Object.assign(window.ALFA_DICT.uk, {
   "Alfa Express (\"we\", \"us\", \"our\") is committed to protecting your privacy. This policy explains what personal data we collect, why we collect it, and how we handle it when you use our website or services.": "Alfa Express («ми», «нас», «наше») зобов'язується захищати вашу конфіденційність. Ця політика пояснює, які персональні дані ми збираємо, навіщо та як ми їх обробляємо, коли ви користуєтеся нашим сайтом чи послугами.",
   "The website is provided on an \"as is\" basis without warranties of any kind.": "Сайт надається на умовах «як є», без будь-яких гарантій."
+});
+
+/* ---- Map figure captions (home + contact) ------------------------------- */
+Object.assign(window.ALFA_DICT.pl, {
+  "HQ — Głogoczów 944 / 1": "Siedziba — Głogoczów 944 / 1",
+  "Office — Bosaków 5A, Kraków": "Biuro — Bosaków 5A, Kraków"
+});
+Object.assign(window.ALFA_DICT.uk, {
+  "HQ — Głogoczów 944 / 1": "Головний офіс — Głogoczów 944 / 1",
+  "Office — Bosaków 5A, Kraków": "Офіс — Bosaków 5A, Краків"
 });
