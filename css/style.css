@@ -275,11 +275,11 @@ h4 { font-size: 1.25rem; font-weight: 600; }
   transition: transform var(--transition);
 }
 .nav-list > li > a:not(.btn):hover,
-.nav-list > li > a[aria-current="page"] {
+.nav-list > li > a:not(.btn)[aria-current="page"] {
   color: var(--color-primary);
 }
 .nav-list > li > a:not(.btn):hover::after,
-.nav-list > li > a[aria-current="page"]::after {
+.nav-list > li > a:not(.btn)[aria-current="page"]::after {
   transform: scaleX(1);
 }
 
@@ -813,7 +813,7 @@ body.no-scroll {
 }
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
   text-align: center;
 }
@@ -1334,6 +1334,7 @@ body.no-scroll {
 .req-star { color: var(--color-accent); }
 
 .form-field input,
+.form-field select,
 .form-field textarea {
   width: 100%;
   padding: 12px 14px;
@@ -1342,9 +1343,24 @@ body.no-scroll {
   background: var(--color-white);
   transition: border-color var(--transition), box-shadow var(--transition);
 }
+.form-field select { cursor: pointer; }
+.form-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  margin-bottom: var(--space-3);
+  background: var(--color-primary-tint, rgba(145, 20, 33, 0.06));
+  border-radius: var(--radius-btn);
+  font-size: 0.9rem;
+  color: var(--color-dark);
+}
+.form-hint i { color: var(--color-primary); margin-top: 3px; }
+.form-field select:invalid { color: var(--color-gray-400); }
 .form-field input::placeholder,
 .form-field textarea::placeholder { color: var(--color-gray-400); }
 .form-field input:focus,
+.form-field select:focus,
 .form-field textarea:focus {
   outline: none;
   border-color: var(--color-primary);
@@ -1354,6 +1370,7 @@ body.no-scroll {
 
 /* invalid state set by JS */
 .form-field.invalid input,
+.form-field.invalid select,
 .form-field.invalid textarea {
   border-color: var(--color-error);
 }

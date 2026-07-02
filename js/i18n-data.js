@@ -202,7 +202,7 @@ Object.assign(window.ALFA_DICT.uk, {
 Object.assign(window.ALFA_DICT.pl, {
   "About Alfa Express": "O Alfa Express",
   "Fifteen years of moving freight, building trust": "Piętnaście lat przewożenia ładunków i budowania zaufania",
-  "We are a Kraków-based logistics provider helping businesses ship smarter across Europe — combining people who care with technology that keeps every load visible.": "Jesteśmy krakowskim dostawcą usług logistycznych, który pomaga firmom mądrzej wysyłać towary po Europie — łącząc zaangażowanych ludzi z technologią, dzięki której każdy ładunek jest widoczny.",
+  "We are a Kraków-based logistics provider helping businesses ship smarter across Europe — combining people who care with technology that keeps every load visible.": "Jesteśmy firmą logistyczną z Krakowa, która pomaga przedsiębiorstwom sprawniej realizować transport w całej Europie — łączymy zaangażowany zespół z technologią, dzięki której zawsze wiesz, gdzie jest Twój ładunek.",
   "Who we are": "Kim jesteśmy",
   "A logistics partner, not just a carrier": "Partner logistyczny, a nie tylko przewoźnik",
   "Founded in 2011, Alfa Express grew from a single regional route into a full-service freight forwarder serving manufacturers, retailers, and distributors across the European Union.": "Założona w 2011 roku Alfa Express wyrosła z jednej regionalnej trasy na pełnozakresowego spedytora obsługującego producentów, sprzedawców i dystrybutorów w całej Unii Europejskiej.",
@@ -241,7 +241,7 @@ Object.assign(window.ALFA_DICT.pl, {
 Object.assign(window.ALFA_DICT.uk, {
   "About Alfa Express": "Про Alfa Express",
   "Fifteen years of moving freight, building trust": "П'ятнадцять років перевезень вантажів і побудови довіри",
-  "We are a Kraków-based logistics provider helping businesses ship smarter across Europe — combining people who care with technology that keeps every load visible.": "Ми — логістичний провайдер із Кракова, що допомагає бізнесу розумніше доставляти вантажі Європою, поєднуючи небайдужих людей із технологією, яка робить кожен вантаж видимим.",
+  "We are a Kraków-based logistics provider helping businesses ship smarter across Europe — combining people who care with technology that keeps every load visible.": "Ми — логістична компанія з Кракова, яка допомагає бізнесу ефективніше організовувати перевезення по всій Європі — поєднуємо небайдужу команду з технологіями, завдяки яким ви завжди знаєте, де ваш вантаж.",
   "Who we are": "Хто ми",
   "A logistics partner, not just a carrier": "Логістичний партнер, а не просто перевізник",
   "Founded in 2011, Alfa Express grew from a single regional route into a full-service freight forwarder serving manufacturers, retailers, and distributors across the European Union.": "Заснована у 2011 році, Alfa Express виросла з одного регіонального маршруту в повносервісного експедитора, що обслуговує виробників, ритейлерів і дистриб'юторів по всьому Європейському Союзу.",
@@ -687,4 +687,62 @@ Object.assign(window.ALFA_DICT.pl, {
 Object.assign(window.ALFA_DICT.uk, {
   "HQ — Głogoczów 944 / 1": "Головний офіс — Głogoczów 944 / 1",
   "Office — Bosaków 5A, Kraków": "Офіс — Bosaków 5A, Краків"
+});
+
+/* ---- About page revisions (no founding-year claims) ---------------------- */
+Object.assign(window.ALFA_DICT.pl, {
+  "Moving freight, building trust": "Przewozimy ładunki, budujemy zaufanie",
+  "Alfa Express is a full-service freight forwarder serving manufacturers, retailers, and distributors across the European Union.": "Alfa Express to pełnozakresowy spedytor obsługujący producentów, sprzedawców i dystrybutorów w całej Unii Europejskiej."
+});
+Object.assign(window.ALFA_DICT.uk, {
+  "Moving freight, building trust": "Перевозимо вантажі, будуємо довіру",
+  "Alfa Express is a full-service freight forwarder serving manufacturers, retailers, and distributors across the European Union.": "Alfa Express — повносервісний експедитор, що обслуговує виробників, ритейлерів і дистриб'юторів по всьому Європейському Союзу."
+});
+
+/* ---- Contact form, FAQ, fleet 24t, 15 countries, hours (PL) -------------- */
+Object.assign(window.ALFA_DICT.pl, {
+  "Truck driver looking for a job? Choose \"Truck driver application\" as the subject, or call us directly.": "Szukasz pracy jako kierowca ciężarówki? Wybierz temat „Zgłoszenie kierowcy ciężarówki” lub zadzwoń do nas bezpośrednio.",
+  "Select a subject…": "Wybierz temat…",
+  "Shipment tracking": "Śledzenie przesyłki",
+  "Carrier / partnership cooperation": "Współpraca przewoźnicza / partnerska",
+  "Truck driver application": "Zgłoszenie kierowcy ciężarówki",
+  "Invoice or documents": "Faktura lub dokumenty",
+  "Other question": "Inne pytanie",
+  "We deliver across 15 European countries: Poland, Germany, Czechia, Austria, Italy, France, Monaco, Spain, Andorra, Portugal, Belgium, the Netherlands, Luxembourg, Denmark, and Sweden. If your route is not listed, just ask — we may still be able to help.": "Dostarczamy do 15 krajów europejskich: Polska, Niemcy, Czechy, Austria, Włochy, Francja, Monako, Hiszpania, Andora, Portugalia, Belgia, Holandia, Luksemburg, Dania i Szwecja. Jeśli Twojej trasy nie ma na liście, zapytaj — być może i tak pomożemy.",
+  "What vehicles and load sizes do you operate?": "Jakimi pojazdami dysponujecie i jakie ładunki przewozicie?",
+  "We run modern Euro 6 tractor units with standard and mega semi-trailers — up to 24 000 kg payload and 33 EUR pallets per load. Full truckload (FTL) and groupage (LTL) options are both available.": "Dysponujemy nowoczesnymi ciągnikami Euro 6 z naczepami standardowymi i mega — do 24 000 kg ładowności i 33 palet EUR na ładunek. Dostępne są opcje całopojazdowe (FTL) i drobnicowe (LTL).",
+  "How can I join Alfa Express as a truck driver?": "Jak dołączyć do Alfa Express jako kierowca ciężarówki?",
+  "We welcome drivers with a valid C+E licence and Driver CPC card. Use the form above with the subject \"Truck driver application\", visit our Careers page, or simply call us — we reply quickly and ADR training is available.": "Zapraszamy kierowców z ważnym prawem jazdy C+E i kartą kwalifikacji (CPC). Skorzystaj z formularza powyżej z tematem „Zgłoszenie kierowcy ciężarówki”, odwiedź zakładkę Kariera lub po prostu zadzwoń — odpowiadamy szybko, a szkolenie ADR jest dostępne.",
+  "Mon–Fri: 08:00–17:00 CET": "Pn–Pt: 08:00–17:00 CET",
+  "Mon–Fri, 08:00–17:00 CET": "Pn–Pt, 08:00–17:00 CET",
+  "Our 40-tonne articulated trucks with standard and mega semi-trailers are GPS-tracked, regularly serviced, and driven by trained, vetted professionals — up to 24 tonnes of payload per load.": "Nasze 40-tonowe zestawy z naczepami standardowymi i mega są śledzone przez GPS, regularnie serwisowane i prowadzone przez wyszkolonych, sprawdzonych kierowców — do 24 ton ładowności na ładunek.",
+  "Euro 6 tractors and modern trailers": "Ciągniki Euro 6 i nowoczesne naczepy",
+  "Real-time GPS monitoring": "Monitoring GPS w czasie rzeczywistym",
+  "We run a modern fleet of 24-tonne semi-trailers matched precisely to your shipment. Every truck is regularly serviced, telematics-equipped, and driven by trained, vetted professionals — keeping your goods safe and your deliveries predictable.": "Dysponujemy nowoczesną flotą naczep o ładowności 24 ton, dopasowaną precyzyjnie do Twojej przesyłki. Każda ciężarówka jest regularnie serwisowana, wyposażona w telematykę i prowadzona przez wyszkolonych, sprawdzonych kierowców — zapewniając bezpieczeństwo towarów i przewidywalność dostaw.",
+  "Coverage across 15 countries": "Zasięg w 15 krajach",
+  "From our Kraków base we deliver to 15 European countries: Poland, Germany, Czechia, Austria, Italy, France, Monaco, Spain, Andorra, Portugal, Belgium, the Netherlands, Luxembourg, Denmark, and Sweden. Whether it is a domestic delivery or a multi-country run, we plan the most efficient route and keep you updated the whole way.": "Z naszej bazy w Krakowie dostarczamy do 15 krajów europejskich: Polska, Niemcy, Czechy, Austria, Włochy, Francja, Monako, Hiszpania, Andora, Portugalia, Belgia, Holandia, Luksemburg, Dania i Szwecja. Niezależnie od tego, czy to dostawa krajowa, czy trasa przez wiele krajów, planujemy najefektywniejszą trasę i informujemy Cię na bieżąco.",
+  "Full truckload (FTL) and groupage (LTL)": "Transport całopojazdowy (FTL) i drobnicowy (LTL)"
+});
+Object.assign(window.ALFA_DICT.uk, {
+  "Truck driver looking for a job? Choose \"Truck driver application\" as the subject, or call us directly.": "Шукаєте роботу водія вантажівки? Оберіть тему «Заявка водія вантажівки» або зателефонуйте нам напряму.",
+  "Select a subject…": "Оберіть тему…",
+  "Shipment tracking": "Відстеження відправлення",
+  "Carrier / partnership cooperation": "Співпраця перевізників / партнерство",
+  "Truck driver application": "Заявка водія вантажівки",
+  "Invoice or documents": "Рахунок або документи",
+  "Other question": "Інше питання",
+  "We deliver across 15 European countries: Poland, Germany, Czechia, Austria, Italy, France, Monaco, Spain, Andorra, Portugal, Belgium, the Netherlands, Luxembourg, Denmark, and Sweden. If your route is not listed, just ask — we may still be able to help.": "Ми доставляємо до 15 європейських країн: Польща, Німеччина, Чехія, Австрія, Італія, Франція, Монако, Іспанія, Андорра, Португалія, Бельгія, Нідерланди, Люксембург, Данія та Швеція. Якщо вашого маршруту немає в списку, запитайте — можливо, ми все одно допоможемо.",
+  "What vehicles and load sizes do you operate?": "Який транспорт ви використовуєте та які вантажі перевозите?",
+  "We run modern Euro 6 tractor units with standard and mega semi-trailers — up to 24 000 kg payload and 33 EUR pallets per load. Full truckload (FTL) and groupage (LTL) options are both available.": "Ми використовуємо сучасні тягачі Euro 6 зі стандартними та мега напівпричепами — до 24 000 кг вантажопідйомності та 33 палет EUR на завантаження. Доступні варіанти FTL (повне завантаження) та LTL (збірні вантажі).",
+  "How can I join Alfa Express as a truck driver?": "Як приєднатися до Alfa Express як водій вантажівки?",
+  "We welcome drivers with a valid C+E licence and Driver CPC card. Use the form above with the subject \"Truck driver application\", visit our Careers page, or simply call us — we reply quickly and ADR training is available.": "Запрошуємо водіїв із чинними правами C+E та карткою кваліфікації (CPC). Скористайтеся формою вище з темою «Заявка водія вантажівки», відвідайте сторінку Кар'єра або просто зателефонуйте — ми відповідаємо швидко, а навчання ADR можливе.",
+  "Mon–Fri: 08:00–17:00 CET": "Пн–Пт: 08:00–17:00 CET",
+  "Mon–Fri, 08:00–17:00 CET": "Пн–Пт, 08:00–17:00 CET",
+  "Our 40-tonne articulated trucks with standard and mega semi-trailers are GPS-tracked, regularly serviced, and driven by trained, vetted professionals — up to 24 tonnes of payload per load.": "Наші 40-тонні автопоїзди зі стандартними та мега напівпричепами відстежуються через GPS, регулярно обслуговуються та керуються навченими, перевіреними водіями — до 24 тонн вантажопідйомності на завантаження.",
+  "Euro 6 tractors and modern trailers": "Тягачі Euro 6 та сучасні напівпричепи",
+  "Real-time GPS monitoring": "GPS-моніторинг у реальному часі",
+  "We run a modern fleet of 24-tonne semi-trailers matched precisely to your shipment. Every truck is regularly serviced, telematics-equipped, and driven by trained, vetted professionals — keeping your goods safe and your deliveries predictable.": "Ми використовуємо сучасний парк напівпричепів вантажопідйомністю 24 тонни, точно підібраний під ваше відправлення. Кожна вантажівка регулярно обслуговується, оснащена телематикою та керується навченими, перевіреними водіями — забезпечуючи безпеку товарів і передбачуваність доставок.",
+  "Coverage across 15 countries": "Покриття у 15 країнах",
+  "From our Kraków base we deliver to 15 European countries: Poland, Germany, Czechia, Austria, Italy, France, Monaco, Spain, Andorra, Portugal, Belgium, the Netherlands, Luxembourg, Denmark, and Sweden. Whether it is a domestic delivery or a multi-country run, we plan the most efficient route and keep you updated the whole way.": "З нашої бази в Кракові ми доставляємо до 15 європейських країн: Польща, Німеччина, Чехія, Австрія, Італія, Франція, Монако, Іспанія, Андорра, Португалія, Бельгія, Нідерланди, Люксембург, Данія та Швеція. Чи то внутрішня доставка, чи багатокраїнний маршрут — ми плануємо найефективніший шлях і тримаємо вас у курсі всю дорогу.",
+  "Full truckload (FTL) and groupage (LTL)": "Повне завантаження (FTL) та збірні вантажі (LTL)"
 });

@@ -109,6 +109,7 @@
         <div class="contact-form-wrap" data-aos="fade-up">
           <h2>Send us a message</h2>
           <p>Fill in the form and we'll get back to you shortly. Fields marked with <span class="req-star" aria-hidden="true">*</span> are required.</p>
+          <p class="form-hint"><i class="fa-solid fa-truck-moving" aria-hidden="true"></i> Truck driver looking for a job? Choose "Truck driver application" as the subject, or call us directly.</p>
           <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
             <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY"> <!-- REPLACE: Web3Forms access key -->
             <input type="hidden" name="subject" value="New enquiry from Alfa Express website">
@@ -131,13 +132,21 @@
 
             <div class="form-row">
               <div class="form-field">
-                <label for="phone">Phone <span class="optional">(optional)</span></label>
-                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+48 571 975 922">
+                <label for="phone">Phone <span class="req-star" aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required aria-required="true" placeholder="+48 571 975 922">
                 <span class="field-error" data-error-for="phone" aria-live="polite"></span>
               </div>
               <div class="form-field">
                 <label for="subject-line">Subject <span class="req-star" aria-hidden="true">*</span></label>
-                <input type="text" id="subject-line" name="subject_line" required aria-required="true" placeholder="Quote request">
+                <select id="subject-line" name="subject_line" required aria-required="true">
+                  <option value="" selected disabled>Select a subject…</option>
+                  <option>Quote request</option>
+                  <option>Shipment tracking</option>
+                  <option>Carrier / partnership cooperation</option>
+                  <option>Truck driver application</option>
+                  <option>Invoice or documents</option>
+                  <option>Other question</option>
+                </select>
                 <span class="field-error" data-error-for="subject-line" aria-live="polite"></span>
               </div>
             </div>
@@ -183,13 +192,13 @@
             </li>
             <li class="contact-card">
               <span class="contact-card-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
-              <div><h3>Opening hours</h3><p>Mon–Fri: 08:00–18:00 CET<br>Sat–Sun: Closed</p></div>
+              <div><h3>Opening hours</h3><p>Mon–Fri: 08:00–17:00 CET<br>Sat–Sun: Closed</p></div>
             </li>
             <li class="contact-card">
               <span class="contact-card-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span>
               <div>
                 <h3>Dane rejestrowe</h3>
-                <p>KRS: 0000914093<br>NIP: 9492249163<br>REGON: 389560996<br>Kapitał zakładowy: 50 000 zł</p>
+                <p>KRS: 0000914093<br>NIP: 9492249163<br>REGON: 389560996</p>
               </div>
             </li>
           </ul>
@@ -242,7 +251,18 @@
               </button>
             </h3>
             <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" hidden>
-              <div class="accordion-panel-inner"><p>We operate across 25 countries throughout the European Union and beyond, with daily departures on major corridors. If you're unsure whether we cover a route, just ask.</p></div>
+              <div class="accordion-panel-inner"><p>We deliver across 15 European countries: Poland, Germany, Czechia, Austria, Italy, France, Monaco, Spain, Andorra, Portugal, Belgium, the Netherlands, Luxembourg, Denmark, and Sweden. If your route is not listed, just ask — we may still be able to help.</p></div>
+            </div>
+          </li>
+          <li class="accordion-item" data-aos="fade-up">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+                <span>What vehicles and load sizes do you operate?</span>
+                <i class="fa-solid fa-chevron-down accordion-icon" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4" hidden>
+              <div class="accordion-panel-inner"><p>We run modern Euro 6 tractor units with standard and mega semi-trailers — up to 24 000 kg payload and 33 EUR pallets per load. Full truckload (FTL) and groupage (LTL) options are both available.</p></div>
             </div>
           </li>
           <li class="accordion-item" data-aos="fade-up">
@@ -265,6 +285,17 @@
             </h3>
             <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
               <div class="accordion-panel-inner"><p>We do. Our in-house customs specialists prepare import and export documentation, manage duties, and clear shipments so your freight keeps moving across borders.</p></div>
+            </div>
+          </li>
+          <li class="accordion-item" data-aos="fade-up">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
+                <span>How can I join Alfa Express as a truck driver?</span>
+                <i class="fa-solid fa-chevron-down accordion-icon" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5" hidden>
+              <div class="accordion-panel-inner"><p>We welcome drivers with a valid C+E licence and Driver CPC card. Use the form above with the subject "Truck driver application", visit our Careers page, or simply call us — we reply quickly and ADR training is available.</p></div>
             </div>
           </li>
         </ul>
