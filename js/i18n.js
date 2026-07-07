@@ -4,6 +4,17 @@
   var STORAGE_KEY = 'alfaLang';
   var SUPPORTED = ['en', 'uk', 'pl'];
 
+  /* The legal pages are separate files per language, not dictionary
+     translations — the switcher navigates between them. */
+  var LEGAL_FILES = {
+    privacy: { en: 'privacy.html', pl: 'privacy-pl.html', uk: 'privacy-uk.html' },
+    terms:   { en: 'terms.html',   pl: 'terms-pl.html',   uk: 'terms-uk.html' }
+  };
+  function legalInfo(file) {
+    var m = /^(privacy|terms)(?:-(pl|uk))?\.html$/.exec(file || '');
+    return m ? { family: m[1], lang: m[2] || 'en' } : null;
+  }
+
   /* Dictionaries are keyed by the normalised English source text and supplied
      by js/i18n-data.js (loaded first). Anything without an entry stays in its
      original language. */
@@ -79,12 +90,23 @@
     document.title = (dict && tt && tt[lang]) ? tt[lang] : baseTitle;
     document.documentElement.setAttribute('lang', lang);
     setActive(lang);
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var info = legalInfo(a.getAttribute('href'));
+      if (info) a.setAttribute('href', LEGAL_FILES[info.family][lang]);
+    });
   }
 
   /* Init + wire-up --------------------------------------------------------- */
   var saved = 'en';
   try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) {}
-  apply(saved);
+  if (SUPPORTED.indexOf(saved) === -1) saved = 'en';
+
+  var here = legalInfo(location.pathname.split('/').pop() || 'index.html');
+  if (here && here.lang !== saved) {
+    location.replace(LEGAL_FILES[here.family][saved]);
+  } else {
+    apply(saved);
+  }
 
   document.addEventListener('click', function (e) {
     var btn = e.target.closest ? e.target.closest('.lang-btn') : null;
@@ -92,6 +114,10 @@
     var lang = btn.getAttribute('data-lang');
     if (!lang) return;
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e2) {}
+    if (here && here.lang !== lang) {
+      location.href = LEGAL_FILES[here.family][lang];
+      return;
+    }
     apply(lang);
   });
 
