@@ -93,56 +93,87 @@
   var yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- Contact form (demo handler) --------------------------------- */
+  /* ---------- Contact form (EmailJS delivery) ----------------------------- */
   var form = document.getElementById('contact-form');
   if (form) {
+    var statusEl = document.getElementById('form-status');
+    var EMAIL = 'central.alfa.express@gmail.com';
+
+    function fieldValid(field) {
+      return field.type === 'checkbox' ? field.checked : !!field.value.trim();
+    }
+    function markField(field, ok) {
+      var wrap  = field.closest('.form-field');
+      var errEl = wrap && wrap.querySelector('.field-error');
+      if (wrap)  wrap.classList.toggle('invalid', !ok);
+      if (errEl) errEl.textContent = ok ? '' : 'This field is required.';
+    }
+    function setStatus(kind, msg) {
+      if (!statusEl) return;
+      statusEl.className = 'form-status' + (kind ? ' ' + kind : '');
+      statusEl.textContent = msg;
+    }
+    /* Config is live only once all three placeholders have been replaced. */
+    function emailjsReady() {
+      var c = window.EMAILJS_CONFIG;
+      return !!(window.emailjs && c &&
+        c.publicKey.indexOf('YOUR_')  !== 0 &&
+        c.serviceId.indexOf('YOUR_')  !== 0 &&
+        c.templateId.indexOf('YOUR_') !== 0);
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      /* Basic required-field validation */
+      /* Honeypot: a ticked hidden field means a bot — drop silently. */
+      if (form.botcheck && form.botcheck.checked) return;
+
+      /* Required-field validation */
       var valid = true;
       form.querySelectorAll('[required]').forEach(function (field) {
-        var wrap = field.closest('.form-field');
-        var errEl = wrap && wrap.querySelector('.field-error');
-        if (!field.value.trim()) {
-          valid = false;
-          if (wrap) wrap.classList.add('invalid');
-          if (errEl) errEl.textContent = 'This field is required.';
-        } else {
-          if (wrap) wrap.classList.remove('invalid');
-          if (errEl) errEl.textContent = '';
-        }
+        var ok = fieldValid(field);
+        if (!ok) valid = false;
+        markField(field, ok);
       });
       if (!valid) return;
 
       var submitBtn = form.querySelector('[type="submit"]');
-      var statusEl  = document.getElementById('form-status');
       var origText  = submitBtn.textContent;
 
-      submitBtn.classList.add('is-loading');
-      submitBtn.textContent = 'Sending…';
-
-      /* Simulate submission */
-      setTimeout(function () {
+      function reset() {
         submitBtn.classList.remove('is-loading');
+        submitBtn.disabled = false;
         submitBtn.textContent = origText;
-        if (statusEl) {
-          statusEl.className  = 'form-status is-success';
-          statusEl.textContent = 'Thank you! Your message has been received. Our team will get back to you within one business day.';
-        }
-        form.reset();
-      }, 1600);
+      }
+
+      submitBtn.classList.add('is-loading');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+      setStatus('', '');
+
+      if (!emailjsReady()) {
+        reset();
+        setStatus('is-error', 'The form is not connected yet. Please email us directly at ' + EMAIL + '.');
+        return;
+      }
+
+      emailjs.sendForm(window.EMAILJS_CONFIG.serviceId, window.EMAILJS_CONFIG.templateId, form)
+        .then(function () {
+          reset();
+          setStatus('is-success', 'Thank you! Your message has been sent. Our team will get back to you within one business day.');
+          form.reset();
+        })
+        .catch(function () {
+          reset();
+          setStatus('is-error', 'Sorry, something went wrong. Please try again or email ' + EMAIL + '.');
+        });
     });
 
-    /* Live validation — clear error on re-input */
+    /* Live validation — clear the error as soon as the field becomes valid */
     form.querySelectorAll('[required]').forEach(function (field) {
-      field.addEventListener('input', function () {
-        var wrap  = field.closest('.form-field');
-        var errEl = wrap && wrap.querySelector('.field-error');
-        if (field.value.trim()) {
-          if (wrap)  wrap.classList.remove('invalid');
-          if (errEl) errEl.textContent = '';
-        }
+      var evt = (field.tagName === 'SELECT' || field.type === 'checkbox') ? 'change' : 'input';
+      field.addEventListener(evt, function () {
+        if (fieldValid(field)) markField(field, true);
       });
     });
   }
