@@ -93,27 +93,58 @@
   var yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- Contact form (demo handler) --------------------------------- */
+  /* ---------- Contact form (EmailJS) -------------------------------------- */
+  /* 1. Create a free account at https://www.emailjs.com
+     2. Add an Email Service (e.g. Gmail) -> copy its SERVICE ID
+     3. Create an Email Template using {{name}} {{email}} {{phone}}
+        {{subject_line}} {{message}} -> copy its TEMPLATE ID
+     4. Account > General -> copy your PUBLIC KEY
+     5. Paste all three below. Until then the form runs in demo mode. */
+  var EMAILJS = {
+    publicKey:  'mxU1MTRL9WN6OQLwm',
+    serviceId:  'service_ogqtr0w',
+    templateId: 'template_3ran6mq'
+  };
+  var emailjsReady =
+    typeof emailjs !== 'undefined' &&
+    EMAILJS.publicKey.indexOf('YOUR_') !== 0 &&
+    EMAILJS.serviceId.indexOf('YOUR_') !== 0 &&
+    EMAILJS.templateId.indexOf('YOUR_') !== 0;
+
+  if (emailjsReady) emailjs.init({ publicKey: EMAILJS.publicKey });
+
   var form = document.getElementById('contact-form');
   if (form) {
+
+    function fieldFilled(field) {
+      return field.type === 'checkbox' ? field.checked : !!field.value.trim();
+    }
+    function errorElFor(field) {
+      return form.querySelector('.field-error[data-error-for="' + field.id + '"]') ||
+             (field.closest('.form-field') || {}).querySelector &&
+             field.closest('.form-field').querySelector('.field-error');
+    }
+    function setFieldState(field, ok) {
+      var wrap  = field.closest('.form-field');
+      var errEl = errorElFor(field);
+      if (wrap) wrap.classList.toggle('invalid', !ok);
+      if (errEl) errEl.textContent = ok ? '' : 'This field is required.';
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      /* Basic required-field validation */
+      /* Required-field validation (checkbox-aware) */
       var valid = true;
       form.querySelectorAll('[required]').forEach(function (field) {
-        var wrap = field.closest('.form-field');
-        var errEl = wrap && wrap.querySelector('.field-error');
-        if (!field.value.trim()) {
-          valid = false;
-          if (wrap) wrap.classList.add('invalid');
-          if (errEl) errEl.textContent = 'This field is required.';
-        } else {
-          if (wrap) wrap.classList.remove('invalid');
-          if (errEl) errEl.textContent = '';
-        }
+        var ok = fieldFilled(field);
+        if (!ok) valid = false;
+        setFieldState(field, ok);
       });
       if (!valid) return;
+
+      /* Honeypot: bots tick the hidden checkbox — pretend success, send nothing */
+      var honeypot = form.querySelector('input[name="botcheck"]');
 
       var submitBtn = form.querySelector('[type="submit"]');
       var statusEl  = document.getElementById('form-status');
@@ -122,29 +153,67 @@
       submitBtn.classList.add('is-loading');
       submitBtn.textContent = 'Sending…';
 
-      /* Simulate submission */
-      setTimeout(function () {
+      function finish(ok, msg) {
         submitBtn.classList.remove('is-loading');
         submitBtn.textContent = origText;
         if (statusEl) {
-          statusEl.className  = 'form-status is-success';
-          statusEl.textContent = 'Thank you! Your message has been received. Our team will get back to you within one business day.';
+          statusEl.className  = 'form-status ' + (ok ? 'is-success' : 'is-error');
+          statusEl.textContent = msg;
         }
-        form.reset();
-      }, 1600);
+        if (ok) form.reset();
+      }
+
+      var SUCCESS_MSG = 'Thank you! Your message has been received. Our team will get back to you within one business day.';
+      var ERROR_MSG   = 'Something went wrong sending your message. Please email us directly at oleksii.maryniuk@alfaexpresseu.com.';
+
+      if (honeypot && honeypot.checked) {
+        setTimeout(function () { finish(true, SUCCESS_MSG); }, 800);
+        return;
+      }
+
+      if (emailjsReady) {
+        /* Real submission via EmailJS — field names map to template variables */
+        emailjs.sendForm(EMAILJS.serviceId, EMAILJS.templateId, form)
+          .then(function () {
+            finish(true, SUCCESS_MSG);
+          })
+          .catch(function () {
+            finish(false, ERROR_MSG);
+          });
+      } else {
+        /* EmailJS not configured yet — demo success so the site works locally */
+        setTimeout(function () { finish(true, SUCCESS_MSG); }, 1200);
+      }
     });
 
-    /* Live validation — clear error on re-input */
+    /* Live validation — clear error as soon as the field is corrected */
     form.querySelectorAll('[required]').forEach(function (field) {
-      field.addEventListener('input', function () {
-        var wrap  = field.closest('.form-field');
-        var errEl = wrap && wrap.querySelector('.field-error');
-        if (field.value.trim()) {
-          if (wrap)  wrap.classList.remove('invalid');
-          if (errEl) errEl.textContent = '';
-        }
+      field.addEventListener(field.type === 'checkbox' ? 'change' : 'input', function () {
+        if (fieldFilled(field)) setFieldState(field, true);
       });
     });
+
+    /* Deep link support: e.g. Careers "Apply now" -> contact.html?subject=driver
+       preselects the matching subject and scrolls the form into view. */
+    (function preselectSubject() {
+      var subj = new URLSearchParams(location.search).get('subject');
+      if (!subj) return;
+      var select = form.querySelector('#subject-line');
+      if (!select) return;
+      var opt = subj === 'driver'
+        ? select.querySelector('option[data-subject="driver"]')
+        : null;
+      if (!opt) {
+        Array.prototype.forEach.call(select.options, function (o) {
+          if (!opt && o.textContent.trim().toLowerCase() === subj.trim().toLowerCase()) opt = o;
+        });
+      }
+      if (!opt) return;
+      opt.selected = true;
+      var wrap = select.closest('.form-field');
+      if (wrap) wrap.classList.remove('invalid');
+      if (form.scrollIntoView) form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }());
   }
 
 }());

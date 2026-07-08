@@ -31,6 +31,7 @@ Object.assign(window.ALFA_DICT.pl, {
   "View Our Fleet": "Zobacz naszą flotę",
   "Request a Quote": "Poproś o wycenę",
   "View Services": "Zobacz usługi",
+  "About Us": "O nas",
   "Learn more": "Dowiedz się więcej",
   "Contact us": "Skontaktuj się z nami",
   "Send your CV": "Wyślij swoje CV"
@@ -53,6 +54,7 @@ Object.assign(window.ALFA_DICT.uk, {
   "View Our Fleet": "Переглянути автопарк",
   "Request a Quote": "Запросити розрахунок",
   "View Services": "Переглянути послуги",
+  "About Us": "Про нас",
   "Learn more": "Дізнатися більше",
   "Contact us": "Зв'язатися з нами",
   "Send your CV": "Надіслати резюме"
@@ -62,7 +64,7 @@ Object.assign(window.ALFA_DICT.uk, {
 Object.assign(window.ALFA_DICT.pl, {
   "Global Logistics & Freight Forwarding": "Globalna logistyka i spedycja",
   "Moving Your Business Forward.": "Rozwijamy Twój biznes.",
-  "Alfa Express plans, ships, and tracks your freight by road, rail, and sea — combining a modern fleet with real-time visibility so your goods arrive on time, every time.": "Alfa Express planuje, wysyła i śledzi Twoje ładunki drogą lądową, kolejową i morską — łącząc nowoczesną flotę z podglądem w czasie rzeczywistym, aby Twoje towary docierały zawsze na czas.",
+  "Alfa Express plans, ships, and tracks your freight by road — combining a modern fleet with real-time visibility so your goods arrive on time, every time.": "Alfa Express planuje, wysyła i śledzi Twoje ładunki drogą lądową — łącząc nowoczesną flotę z podglądem w czasie rzeczywistym, aby Twoje towary docierały zawsze na czas.",
   "Live shipment tracking": "Śledzenie przesyłek na żywo",
   "25-country coverage": "Zasięg w 25 krajach",
   "Dedicated account manager": "Dedykowany opiekun klienta",
@@ -131,7 +133,7 @@ Object.assign(window.ALFA_DICT.pl, {
 Object.assign(window.ALFA_DICT.uk, {
   "Global Logistics & Freight Forwarding": "Глобальна логістика та спедиція",
   "Moving Your Business Forward.": "Рухаємо ваш бізнес уперед.",
-  "Alfa Express plans, ships, and tracks your freight by road, rail, and sea — combining a modern fleet with real-time visibility so your goods arrive on time, every time.": "Alfa Express планує, відправляє та відстежує ваші вантажі автомобільним транспортом — поєднуючи сучасний автопарк із відстеженням у реальному часі, щоб ваші товари прибували вчасно.",
+  "Alfa Express plans, ships, and tracks your freight by road — combining a modern fleet with real-time visibility so your goods arrive on time, every time.": "Alfa Express планує, відправляє та відстежує ваші вантажі автомобільним транспортом — поєднуючи сучасний автопарк із відстеженням у реальному часі, щоб ваші товари прибували вчасно.",
   "Live shipment tracking": "Відстеження вантажів у реальному часі",
   "25-country coverage": "Покриття у 25 країнах",
   "Dedicated account manager": "Персональний менеджер",
@@ -592,7 +594,7 @@ Object.assign(window.ALFA_DICT.pl, {
   "Depending on your location, you may have the right to access, correct, delete, or restrict the use of your personal data, and to object to certain processing.": "W zależności od lokalizacji możesz mieć prawo do dostępu, poprawiania, usuwania lub ograniczenia wykorzystania swoich danych osobowych oraz do sprzeciwu wobec niektórych operacji przetwarzania.",
   "To exercise any of these rights, contact us using the details below.": "Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami, korzystając z poniższych danych.",
   "8. Contact us": "8. Kontakt",
-  "If you have questions about this policy or how we handle your data, contact us at central.alfa.express@gmail.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Jeśli masz pytania dotyczące tej polityki lub sposobu przetwarzania danych, skontaktuj się z nami pod adresem central.alfa.express@gmail.com lub listownie: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
+  "If you have questions about this policy or how we handle your data, contact us at oleksii.maryniuk@alfaexpresseu.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Jeśli masz pytania dotyczące tej polityki lub sposobu przetwarzania danych, skontaktuj się z nami pod adresem oleksii.maryniuk@alfaexpresseu.com lub listownie: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
 });
 
 /* ---- Legal: terms (PL) -------------------------------------------------- */
@@ -614,7 +616,7 @@ Object.assign(window.ALFA_DICT.pl, {
   "To the fullest extent permitted by law, Alfa Express is not liable for any loss or damage arising from your use of, or inability to use, this website.": "W najszerszym zakresie dozwolonym przez prawo Alfa Express nie ponosi odpowiedzialności za jakiekolwiek straty lub szkody wynikające z korzystania lub niemożności korzystania z tej strony.",
   "7. Governing law": "7. Prawo właściwe",
   "These terms are governed by the laws of Poland. Any disputes will be subject to the exclusive jurisdiction of the Polish courts.": "Niniejsze warunki podlegają prawu polskiemu. Wszelkie spory będą podlegać wyłącznej jurysdykcji sądów polskich.",
-  "If you have questions about these terms, contact us at central.alfa.express@gmail.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Jeśli masz pytania dotyczące tych warunków, skontaktuj się z nami pod adresem central.alfa.express@gmail.com lub listownie: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
+  "If you have questions about these terms, contact us at oleksii.maryniuk@alfaexpresseu.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Jeśli masz pytania dotyczące tych warunków, skontaktuj się z nami pod adresem oleksii.maryniuk@alfaexpresseu.com lub listownie: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
 });
 Object.assign(window.ALFA_DICT.pl, {
   "Alfa Express (\"we\", \"us\", \"our\") is committed to protecting your privacy. This policy explains what personal data we collect, why we collect it, and how we handle it when you use our website or services.": "Alfa Express („my”, „nas”, „nasze”) zobowiązuje się do ochrony Twojej prywatności. Niniejsza polityka wyjaśnia, jakie dane osobowe zbieramy, dlaczego je zbieramy i jak je przetwarzamy, gdy korzystasz z naszej strony lub usług.",
@@ -650,7 +652,7 @@ Object.assign(window.ALFA_DICT.uk, {
   "Depending on your location, you may have the right to access, correct, delete, or restrict the use of your personal data, and to object to certain processing.": "Залежно від вашого місцезнаходження ви можете мати право на доступ, виправлення, видалення чи обмеження використання ваших персональних даних, а також заперечувати проти певної обробки.",
   "To exercise any of these rights, contact us using the details below.": "Щоб скористатися будь-яким із цих прав, зв'яжіться з нами за наведеними нижче контактами.",
   "8. Contact us": "8. Зв'язатися з нами",
-  "If you have questions about this policy or how we handle your data, contact us at central.alfa.express@gmail.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Якщо у вас є запитання щодо цієї політики або обробки ваших даних, зв'яжіться з нами за адресою central.alfa.express@gmail.com або поштою: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
+  "If you have questions about this policy or how we handle your data, contact us at oleksii.maryniuk@alfaexpresseu.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Якщо у вас є запитання щодо цієї політики або обробки ваших даних, зв'яжіться з нами за адресою oleksii.maryniuk@alfaexpresseu.com або поштою: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
 });
 
 /* ---- Legal: terms (UK) -------------------------------------------------- */
@@ -672,7 +674,7 @@ Object.assign(window.ALFA_DICT.uk, {
   "To the fullest extent permitted by law, Alfa Express is not liable for any loss or damage arising from your use of, or inability to use, this website.": "У межах, максимально дозволених законом, Alfa Express не несе відповідальності за будь-які збитки чи шкоду, що виникли внаслідок використання або неможливості використання цього сайту.",
   "7. Governing law": "7. Застосовне право",
   "These terms are governed by the laws of Poland. Any disputes will be subject to the exclusive jurisdiction of the Polish courts.": "Ці умови регулюються законодавством Польщі. Будь-які спори підлягають виключній юрисдикції польських судів.",
-  "If you have questions about these terms, contact us at central.alfa.express@gmail.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Якщо у вас є запитання щодо цих умов, зв'яжіться з нами за адресою central.alfa.express@gmail.com або поштою: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
+  "If you have questions about these terms, contact us at oleksii.maryniuk@alfaexpresseu.com or by post at Głogoczów 944 / 1, 32-444 Głogoczów, Polska.": "Якщо у вас є запитання щодо цих умов, зв'яжіться з нами за адресою oleksii.maryniuk@alfaexpresseu.com або поштою: Głogoczów 944 / 1, 32-444 Głogoczów, Polska."
 });
 Object.assign(window.ALFA_DICT.uk, {
   "Alfa Express (\"we\", \"us\", \"our\") is committed to protecting your privacy. This policy explains what personal data we collect, why we collect it, and how we handle it when you use our website or services.": "Alfa Express («ми», «нас», «наше») зобов'язується захищати вашу конфіденційність. Ця політика пояснює, які персональні дані ми збираємо, навіщо та як ми їх обробляємо, коли ви користуєтеся нашим сайтом чи послугами.",

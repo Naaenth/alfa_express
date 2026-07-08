@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — Alfa Express</title>
-  <meta name="description" content="Contact Alfa Express in Kraków for quotes, tracking, and support. Use our contact form, call +48 571 975 922, or email central.alfa.express@gmail.com.">
+  <meta name="description" content="Contact Alfa Express in Kraków for quotes, tracking, and support. Use our contact form, call +48 571 975 922, or email oleksii.maryniuk@alfaexpresseu.com.">
   <meta name="theme-color" content="#911421">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Alfa Express">
   <meta property="og:title" content="Contact Us — Alfa Express">
-  <meta property="og:description" content="Contact Alfa Express in Kraków for quotes, tracking, and support. Use our contact form, call +48 571 975 922, or email central.alfa.express@gmail.com.">
+  <meta property="og:description" content="Contact Alfa Express in Kraków for quotes, tracking, and support. Use our contact form, call +48 571 975 922, or email oleksii.maryniuk@alfaexpresseu.com.">
   <meta property="og:image" content="assets/images/white-truck-crossing-bridge-sunset-urban-logistics-motion.jpg">
 
   <!-- Favicon -->
@@ -110,10 +110,7 @@
           <h2>Send us a message</h2>
           <p>Fill in the form and we'll get back to you shortly. Fields marked with <span class="req-star" aria-hidden="true">*</span> are required.</p>
           <p class="form-hint"><i class="fa-solid fa-truck-moving" aria-hidden="true"></i> Truck driver looking for a job? Choose "Truck driver application" as the subject, or call us directly.</p>
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
-            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY"> <!-- REPLACE: Web3Forms access key -->
-            <input type="hidden" name="subject" value="New enquiry from Alfa Express website">
-            <input type="hidden" name="from_name" value="Alfa Express Website">
+          <form id="contact-form" novalidate>
             <!-- Honeypot anti-spam field -->
             <input type="checkbox" name="botcheck" class="visually-hidden" style="display:none;" tabindex="-1" autocomplete="off">
 
@@ -143,7 +140,7 @@
                   <option>Quote request</option>
                   <option>Shipment tracking</option>
                   <option>Carrier / partnership cooperation</option>
-                  <option>Truck driver application</option>
+                  <option data-subject="driver">Truck driver application</option>
                   <option>Invoice or documents</option>
                   <option>Other question</option>
                 </select>
@@ -188,7 +185,7 @@
             </li>
             <li class="contact-card">
               <span class="contact-card-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
-              <div><h3>Email</h3><p><a href="mailto:central.alfa.express@gmail.com">central.alfa.express@gmail.com</a></p></div> <!-- REPLACE: email -->
+              <div><h3>Email</h3><p><a href="mailto:oleksii.maryniuk@alfaexpresseu.com">oleksii.maryniuk@alfaexpresseu.com</a></p></div> <!-- REPLACE: email -->
             </li>
             <li class="contact-card">
               <span class="contact-card-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
@@ -331,7 +328,7 @@
           <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Głogoczów 944 / 1, 32-444 Głogoczów</span></li>
           <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Bosaków 5A, 31-476 Kraków</span></li>
           <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+48571975922">+48 571 975 922</a></li> <!-- REPLACE: phone -->
-          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:central.alfa.express@gmail.com">central.alfa.express@gmail.com</a></li> <!-- REPLACE: email -->
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:oleksii.maryniuk@alfaexpresseu.com">oleksii.maryniuk@alfaexpresseu.com</a></li> <!-- REPLACE: email -->
         </ul>
       </div>
     </div>
@@ -350,6 +347,8 @@
   <!-- Libraries (CDN) -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- EmailJS SDK (contact form delivery) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- Site scripts -->
   <script src="js/i18n-data.js" defer></script>
   <script src="js/i18n.js" defer></script>

@@ -70,6 +70,16 @@
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
   }
+  /* Point footer legal links (Privacy / Terms) at the current language's file
+     variant, so they open the matching translation directly. */
+  function rewriteLegalLinks(lang) {
+    document.querySelectorAll('.footer-legal a[href]').forEach(function (a) {
+      var mm = (a.getAttribute('href') || '').match(/(privacy|terms)(?:-(?:pl|uk))?\.html$/);
+      if (!mm) return;
+      var base = mm[1];
+      a.setAttribute('href', lang === 'en' ? base + '.html' : base + '-' + lang + '.html');
+    });
+  }
   function apply(lang) {
     if (SUPPORTED.indexOf(lang) === -1) lang = 'en';
     var dict = (lang === 'en') ? null : T[lang];
@@ -79,6 +89,7 @@
     document.title = (dict && tt && tt[lang]) ? tt[lang] : baseTitle;
     document.documentElement.setAttribute('lang', lang);
     setActive(lang);
+    rewriteLegalLinks(lang);
   }
 
   /* Init + wire-up --------------------------------------------------------- */
