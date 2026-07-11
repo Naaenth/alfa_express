@@ -705,7 +705,9 @@ body.no-scroll {
 
 .industries-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* minmax(0, …) lets tracks shrink below the longest label word — Ukrainian
+     ("промисловість", "господарство") otherwise pushes the grid past the container */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-2);
 }
 .industry {
@@ -736,6 +738,11 @@ body.no-scroll {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.9375rem;
+  /* long single-word labels (uk) must wrap inside the shrunken track;
+     "anywhere" (unlike break-word) also lowers the span's min-content width */
+  max-width: 100%;
+  hyphens: auto;
+  overflow-wrap: anywhere;
   color: var(--color-dark);
 }
 

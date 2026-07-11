@@ -71,7 +71,7 @@
   .stat-number { font-size: 2.25rem; }
 
   /* Industries */
-  .industries-grid { grid-template-columns: repeat(4, 1fr); }
+  .industries-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
   /* CTA band */
   .cta-inner {
@@ -139,7 +139,7 @@
 
   .stats-grid { grid-template-columns: 1fr 1fr; }
 
-  .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .industries-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .footer-grid { grid-template-columns: 1fr; }
 

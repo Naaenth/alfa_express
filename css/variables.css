@@ -73,6 +73,11 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* AOS fade-left/right start states shift below-fold elements ±100px,
+     which otherwise widens the page and adds a horizontal scroll gap.
+     (clip on html, not body, so the sticky header keeps working.) */
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -85,6 +90,11 @@ body {
 }
 
 img, svg, video { max-width: 100%; height: auto; display: block; }
+
+/* Second line of defence for the AOS slide-ins: clip the overflow where it is
+   created, so the page can never become horizontally scrollable even if the
+   root-level clip above is missing (old cached stylesheet, older browser). */
+main { overflow-x: hidden; overflow-x: clip; }
 
 a {
   color: inherit;

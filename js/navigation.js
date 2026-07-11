@@ -76,10 +76,15 @@
   });
 
   /* ---------- Active nav link highlight ---------------------------------- */
-  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  /* Pretty-URL hosts drop the .html suffix, so compare extension-agnostic keys. */
+  function pageKey(path) {
+    var p = (path.split(/[?#]/)[0].split('/').pop() || '').toLowerCase().replace(/\.html$/, '');
+    return p || 'index';
+  }
+  var currentPage = pageKey(window.location.pathname);
   document.querySelectorAll('.nav-list a, .mobile-nav-list a').forEach(function (link) {
     var href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    if (pageKey(href) === currentPage) {
       link.setAttribute('aria-current', 'page');
     } else {
       link.removeAttribute('aria-current');

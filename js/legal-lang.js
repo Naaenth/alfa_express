@@ -11,15 +11,19 @@
   var STORAGE_KEY = 'alfaLang';
   var SUPPORTED = ['en', 'uk', 'pl'];
 
-  var file = (location.pathname.split('/').pop() || '').toLowerCase();
-  var m = file.match(/^(privacy|terms)(?:-(pl|uk))?\.html$/);
+  /* Hosts with "pretty URLs" (Netlify, Cloudflare Pages…) serve these pages
+     extensionless (/terms instead of /terms.html), so the .html suffix and a
+     trailing slash are both optional. Generated URLs keep the same style. */
+  var m = location.pathname.match(/^(.*\/)(privacy|terms)(?:-(pl|uk))?(\.html)?\/?$/i);
   if (!m) return;                       // not a localized legal page — do nothing
 
-  var base = m[1];                      // "privacy" or "terms"
-  var current = m[2] || 'en';           // language of THIS file
+  var dir = m[1];                       // path up to the file name
+  var base = m[2].toLowerCase();        // "privacy" or "terms"
+  var current = (m[3] || 'en').toLowerCase(); // language of THIS file
+  var ext = m[4] || '';                 // ".html" locally, "" on pretty-URL hosts
 
   function urlFor(lang) {
-    return lang === 'en' ? base + '.html' : base + '-' + lang + '.html';
+    return dir + (lang === 'en' ? base : base + '-' + lang) + ext;
   }
 
   /* If the visitor already chose a language elsewhere on the site, keep the
